@@ -89,14 +89,14 @@ label sightseeing:
 label silent:
     "The akward silence persists..."
     "After what feels like an eternity, you finally arrive at the bridge."
-    jump end
+    jump bridgeoutside
 
 label talkbridge:
     if scientistlikes>=2:
         "After a very nice conversation, you arrive at the bridge!"
     else:
         "After a short conversation, you arrive at the bridge!"
-    jump end
+    jump bridgeoutside
 
 
 
@@ -119,5 +119,15 @@ label bridgeoutside:
     menu:
         "Its an emergency, so it should be fine.":
             jump end
-        "Were staff actually.":
+        "We're staff actually.":
+            char2 "Then show me your ids please."
+            char3 "AAAH Im so sorry, [pronoun1] [ist] just joking!"
+            char3 "We're just guests!"
+            char2 "How funny. Well, then I certainly cant tell you."
+            jump end
+        "I work here actually. Just me, not this guy here.":
+            jump end
+        "If we ask you very nicely?":
+            jump end
+        "Nobody has to know...":
             jump end
