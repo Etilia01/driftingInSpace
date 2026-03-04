@@ -95,5 +95,18 @@ label talkbridge:
     if scientistlikes>=2:
         "After a very nice conversation, you arrive at the bridge!"
     else:
-        "After a conversation, you arrive at the bridge!"
+        "After a short conversation, you arrive at the bridge!"
     jump end
+
+
+
+label bridgeoutside:
+    "Or rather outside the bridge. Your way is being blocked by a very serious looking security person."
+    char2 "Stop right there."
+    char2 "Why are you here?"
+    char3 "We had hoped to find ship staff to ask about the quarantine."
+    char2 "Quarantine? What do you mean by that?"
+    char3 "After the alarm just now, there was an announcement in the main hall about how were quarantined now for some reason."
+    char3 "We dont know why, so we want to talk to someone who does. Which apparently isnt you."
+    char2 "No need to be so rude."
+    char3 "I wasnt trying to be, sorry!"
