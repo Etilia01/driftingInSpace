@@ -24,6 +24,7 @@ label start:
     $ pronoun1 = "them"
     $ pronoun1 = "their"
     $ name = "'You'"
+    $ convincesecurityfail = 0
     "A loud alarm rings all throughout the ship"
     "But its hard to pin down where exactly it came from"
     "You start looking around, trying to find out what broke this time"

@@ -116,18 +116,51 @@ label bridgeoutside:
     char2 "And even if you were, the captain isnt here right now."
     char3 "Where are they then?"
     char2 "Im not sure if I can tell you that."
-    menu:
-        "Its an emergency, so it should be fine.":
-            jump end
-        "We're staff actually.":
-            char2 "Then show me your ids please."
-            char3 "AAAH Im so sorry, [pronoun1] [ist] just joking!"
-            char3 "We're just guests!"
-            char2 "How funny. Well, then I certainly cant tell you."
-            jump end
-        "I work here actually. Just me, not this guy here.":
-            jump end
-        "If we ask you very nicely?":
-            jump end
-        "Nobody has to know...":
-            jump end
+    jump convincethem
+
+label convincethem:
+    if convincesecurityfail == 2:
+        char2 "Look, I dont think were getting anywhere with this."
+        char2 "I have to ask you to leave. If you dont do it on your own, I will have to use force."
+        char3 "Were so so sorry, of course well leave!"
+        jump end
+    else:
+        menu:
+            "Its an emergency, so it should be fine.":
+                jump end
+            "We're staff actually.":
+                char2 "Then show me your ids please."
+                char3 "AAAH Im so sorry, [pronoun1] [ist] just joking!"
+                char3 "We're just guests!"
+                char2 "How funny. Well, then I certainly cant tell you."
+                $ convincesecurityfail +=1
+                jump convincethem
+            "I work here actually. Just me, not this guy here.":
+                char2 "I would need to see your ID then."
+                y "Of course... If only I hadnt lost it!"
+                char2 "Lost it?"
+                y "Yes, I think I forgot it in the main hall. How stupid of me."
+                char2 "Then go get it...?"
+                y "I will!"
+                "You confidently turn around and start making your way back."
+                "Scienceguy sprints after you."
+                char3 "What do you mean lost it? You dont work here, do you?"
+                y "I dont. But do they really need to know that?"
+                char3 "How are you going to 'prove' that you work here then?"
+                char3 "You dont have an ID!"
+                if scientistlikes>=2:
+                    "I dont want you to get in trouble!"
+                menu:
+                    "It will be fine":
+                        jump end
+                    "Youre right, what was I thinking?":
+                        jump end
+                jump end
+            "If we ask you very nicely?":
+                char2 "No. Absolutely not"
+                $ convincesecurityfail +=1
+                jump convincethem
+            "Nobody has to know...":
+                char2 "I would like to keep my job, actually."
+                $ convincesecurityfail +=1
+                jump convincethem
