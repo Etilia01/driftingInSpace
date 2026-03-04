@@ -110,3 +110,14 @@ label bridgeoutside:
     char3 "We dont know why, so we want to talk to someone who does. Which apparently isnt you."
     char2 "No need to be so rude."
     char3 "I wasnt trying to be, sorry!"
+    char2 "Apology accepted. Sorry I couldnt help you."
+    char3 "Well see, you could! Just let us talk to the captain or something."
+    char2 "Im afraid youre not authorized to do that."
+    char2 "And even if you were, the captain isnt here right now."
+    char3 "Where are they then?"
+    char2 "Im not sure if I can tell you that."
+    menu:
+        "Its an emergency, so it should be fine.":
+            jump end
+        "Were staff actually.":
+            jump end
