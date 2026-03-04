@@ -1,0 +1,99 @@
+label bridge:
+    "You leave the main hall and walk somewhere in the general direction of the bridge."
+    "the silence feels a bit akward"
+    menu:
+        "Try to talk to ScienceGuyPlaceholder":
+            jump smalltalk
+        "Stay silent":
+            jump silent
+            
+label smalltalk:
+    y "So, why are you traveling with this ship?"
+    if mean >=2:
+        jump silent
+    char3 "Im on my way to a meetup with fellow biologists on planetx. Its really cool, its one of the biggest science conventions in our galaxy!"
+    char3 "Its the first time ive ever gone, and Ive been invited to an exclusive meetup too!"
+    y "Oh wow. What do you do for work to get invited to something like that?"
+    char3 "Im an agriculture expert! Its always been a major interest of mine. "
+    char3 "I have my own private radio station where I talk about it too! Thats how I got invited, a pretty important person listened to it and decided my research was interesting enough to allow me to attend!"
+    y "Sounds really interesting!"
+    char3 "Where are you going?"
+    menu:
+        "The same convention actually!":
+            char3 "What really!? Thats so cool!"
+            if jokester >=2:
+                char3 "We should hang out there too!"
+                char3 "Uh- that is, if you dont have friends waiting for you there of course. You dont have to."
+                char3 "But youve been really fun to talk to so far and Im honestly kind of scared to be alone there... So id be very happy if you tagged along!"
+                char3 "Im not trying to force you to spend time with me, I totally understand if you dont want to. Were not friends or anything after all, we just met."
+                menu:
+                    "Why not? (Join him at the convention once you get there)":
+                        $ scientistlikes +=1
+                        char3 "Yay! Thank you so much, I promise it will be fun!!"
+                        jump talkbridge
+                    "I dont really want to.":
+                        char3 "Oh, ok. Thats fine."
+                        jump talkbridge
+            else:
+                char3 "Im sure its going to be really fun!"
+                y "From what ive heard, it definitely will be!"
+        "Im visiting family.":
+            char3 "Oh thats nice."
+            char3 "Always good to visit from time to time hm?"
+            jump end
+        "Going on vacation!":
+            char3 "Oh cool! Where are you going exactly?"
+            menu:
+                "Somewhere warm":
+                    jump warm_vac
+                "Somewhere cold":
+                    jump cold_vac
+                "Somewhere to go shopping":
+                    jump shopping
+                "Somewhere to go sight-seeing":
+                    jump sightseeing
+        "Going home after a worktrip":
+            char3 "Ah how nice."
+            char3 "You must be exhausted after travelling for work. Are you happy to go home again?"
+            menu:
+                "Yes":
+                    char3 "Understandable. Fortunately I dont really travel for my work like... at all usually, it sounds very stressful."
+                    jump talkbridge
+                "No":
+                    char3 "Oh... Thats unfortunate?"
+                    jump talkbridge
+label cold_vac:
+    y "Im traveling to an ice-planet for vacation. I like wintersports a lot, so that was the perfect vacation!"
+    char3 "Oh, thats cool. Literally, haha. Im a fan of cold places too, I just love the snow so much!"
+    $ scientistlikes +=1
+    jump talkbridge
+label warm_vac:
+    y "Im traveling to a pretty warm planet to go on a beach vacation! I love to swim, and just like how cozy warm weather feels."
+    char3 "Ah, I cant relate. I dislike even the warm seasons on my homeplanet, and thats a pretty cold world in relation to some of these vacation planets..."
+    if mean <=0:
+        char3 "What matters most is that you like it of course, its your vacation after all. I dont know why I thought it was appropriate to comment on that, im so sorry!"
+    jump talkbridge
+label shopping:
+    y "Im going to a major city on a rich planet in the main trade regions to go on a few shopping trips! I saved up for that for a while!"
+    char3 "That would be way too crowded for me."
+    if mean <=0:
+        char3 "But I hope you find the things youre looking for!"
+    jump talkbridge
+label sightseeing:
+    y "I want to go sightseeing! Like going to museums and looking at cool buildings! So I decided to visit a planet with well preserved history, and a thriving economy."
+    char3 "Oh that sounds super fun! Im not the biggest fan of museums, I personally just dont like the weird sterile atmosphere a lot of them have, but I always like to look at cool public art outside like statues and fountains in the city!"
+    if mean <=0:
+        char3 "I highly recommend a visit to Ahujift if youre interested in these kinds of things, thats a city on Tedow with beautiful fountains. Theyre all public and free to visit, and have a really interesting design concept!"
+    jump talkbridge
+
+label silent:
+    "The akward silence persists..."
+    "After what feels like an eternity, you finally arrive at the bridge."
+    jump end
+
+label talkbridge:
+    if scientistlikes>=2:
+        "After a very nice conversation, you arrive at the bridge!"
+    else:
+        "After a conversation, you arrive at the bridge!"
+    jump end

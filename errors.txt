@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 186: expected statement.
+    scientistlikes -=1
+                    ^
+
+File "game/script.rpy", line 190: expected statement.
+    scientistlikes -=1
+                    ^
+
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Tue Feb 24 09:53:55 2026
