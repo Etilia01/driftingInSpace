@@ -133,7 +133,7 @@ label convincethem:
                 char2 "He's been gone for quite some time now, so he should get back soon."
                 char3 "Alright, then we'll wait here with you."
                 menu:
-                    "Wait.":
+                    "Wait":
                         jump end
                     "Go get the captain":
                         jump end
