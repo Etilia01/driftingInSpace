@@ -127,7 +127,16 @@ label convincethem:
     else:
         menu:
             "Its an emergency, so it should be fine.":
-                jump end
+                char2 "Well. I guess it is..."
+                char2 "Fine."
+                char2 "The board computer had a malfunction, so he went to get our main technician to fix it."
+                char2 "He's been gone for quite some time now, so he should get back soon."
+                char3 "Alright, then we'll wait here with you."
+                menu:
+                    "Wait.":
+                        jump end
+                    "Go get the captain":
+                        jump end
             "We're staff actually.":
                 char2 "Then show me your ids please."
                 char3 "AAAH Im so sorry, [pronoun1] [ist] just joking!"
@@ -151,10 +160,16 @@ label convincethem:
                 if scientistlikes>=2:
                     "I dont want you to get in trouble!"
                 menu:
-                    "It will be fine":
-                        jump end
+                    #"It will be fine":
+                        #jump end
                     "Youre right, what was I thinking?":
-                        jump end
+                        "You turn back and walk back to the door."
+                        y "So... That was a joke."
+                        char2 "What?"
+                        y "I dont actually work here."
+                        char2 "Ah. Very funny."
+                        $ convincesecurityfail +=1
+                        jump convincethem
                 jump end
             "If we ask you very nicely?":
                 char2 "No. Absolutely not"
@@ -162,5 +177,6 @@ label convincethem:
                 jump convincethem
             "Nobody has to know...":
                 char2 "I would like to keep my job, actually."
+                char2 "Please leave."
                 $ convincesecurityfail +=1
                 jump convincethem
