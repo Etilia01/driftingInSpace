@@ -134,7 +134,29 @@ label convincethem:
                 char3 "Alright, then we'll wait here with you."
                 menu:
                     "Wait":
-                        jump end
+                        "You wait..."
+                        "And wait..."
+                        "And end up waiting for more than an hour."
+                        char2 "That is strange..."
+                        char2 "You two, can you go look for the captain?"
+                        char2 "Im not allowed to leave my post, but Im very worried about him."
+                        char2 "He said hed only be away for 15 minutes, normally he would have called already to tell me that it will take him longer."
+                        char3 "What could have gone wrong?"
+                        char2 "Im not sure."
+                        char3 "I dont know if we can go look for him... What if something REALLY bad happened? Arent you more qualified to deal with that?"
+                        char2 "I would, but as said, I cant leave. Also, I dont think its that bad. The worst that could have happened would be a medical emergency, and thats not a danger to you."
+                        char2 "And if it was that bad, it would be even more important for you to get there as fast as possible."
+                        char3 "Hm. What do you think [name]?"
+                        menu:
+                            "We should go look for him.":#
+                                char3 "If you say so... Ok."
+                                char3 "Where do we need to go?"
+                                char2 "The captain should be in the engine room."
+                                char2 "Apparently there was a minor malfunction there, so thats where the technician and our mechanic went, and where our captain searched for them."
+                                char3 "Alright, then lets go!"
+                                jump waytoengineroom
+                            #"No, thats their job, not ours.":
+                                #jump end
                     "Go get the captain":
                         jump end
             "We're staff actually.":
@@ -180,3 +202,23 @@ label convincethem:
                 char2 "Please leave."
                 $ convincesecurityfail +=1
                 jump convincethem
+    
+    label waytoengineroom:
+        "You make your way to the engine room."
+        y "How do you know where we need to go?"
+        char3 "Im always really anxious about getting lost, because I'd be way to scared to ask for help, so I have the layout memorized."
+        char3 "And even if I didnt, I have some of these little flyers they had lying around at checkin with me, those also have a small map."
+        char3 "Do you want one?"
+        menu:
+            "Yes":
+                char3 "Ok, here you go!"
+                if mean <=1:
+                    y "Thank you!"
+                $ hasflyer = 1
+                "You put the flyer in your pocket."
+                
+                jump end
+            "No":
+                char3 "Ok. Tell me if you change your mind later."
+                y "I will, thanks."
+                jump end

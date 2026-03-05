@@ -247,8 +247,8 @@ screen quick_menu():
 
             xalign 0.5
             yalign 1.0
-
-            
+            if hasflyer == 1:
+                textbutton _("Open Flyer") action ToggleScreen("mapScreen")
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -1621,3 +1621,13 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+#mapscreen:
+screen mapScreen:
+    tag menu          
+    zorder 50         
+    modal False 
+    image "images/mapimageplaceholder.jpg":
+   
+        size (600, 400)
+        pos (10, 10)

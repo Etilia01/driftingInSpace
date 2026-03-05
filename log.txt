@@ -1,35 +1,479 @@
-2026-03-05 17:36:20 UTC
+2026-03-05 19:46:50 UTC
 Linux-6.18.9-arch1-2-x86_64-with-glibc2.43
 Ren'Py 8.3.7.25031702
 
-Early init took 0.24s
-Loading error handling took 0.20s
-Loading script took 0.98s
-Loading save slot metadata took 0.32s
+Early init took 0.19s
+Loading error handling took 0.11s
+Loading script took 1.03s
+Loading save slot metadata took 0.19s
 Loading persistent took 0.00s
-Running init code took 0.38s
-Loading analysis data took 0.12s
+Running init code took 0.30s
+Loading analysis data took 0.09s
 Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.09s
+Reloading save slot metadata took 0.10s
 Index archives took 0.00s
 Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.25s
+Dump and make backups took 0.42s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.32s
+Initial gc took 0.19s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.01s
-Analyze screens took 0.19s
-Save screen analysis took 0.25s
-Prepare screens took 0.40s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.06s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.05s
+Save bytecode. took 0.10s
+Running _start took 0.00s
+Interface start took 1.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1600, 900)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1600, 900) drawable=(1600, 900)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 477.59s
+Loading error handling took 0.13s
+Loading script took 1.18s
+Loading save slot metadata took 0.06s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.78s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1600, 900)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1600, 900) drawable=(1600, 900)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 30, in script
+    "But its hard to pin down where exactly it came from"
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 2586, in execute
+    Say.execute(self)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/exports/sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1471, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1117, in do_display
+    display_say(who,
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2748, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 480, in visit_all
+    callback(self)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2748, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 491, in per_interact
+    self.update()
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 243, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 245, in execute
+    hbox:
+  File "game/screens.rpy", line 250, in execute
+    if hasflyer == 1:
+  File "game/screens.rpy", line 250, in <module>
+    if hasflyer == 1:
+NameError: name 'hasflyer' is not defined
+
+While running game code:
+  File "game/script.rpy", line 30, in script
+    "But its hard to pin down where exactly it came from"
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 243, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 245, in execute
+    hbox:
+  File "game/screens.rpy", line 250, in execute
+    if hasflyer == 1:
+  File "game/screens.rpy", line 250, in <module>
+    if hasflyer == 1:
+NameError: name 'hasflyer' is not defined
+Resetting cache.
+Early init took 548.77s
+Loading error handling took 0.08s
+Loading script took 0.46s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.14s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.15s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.06s
+Prepare screens took 0.22s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.16s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.98s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1600, 900)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1600, 900) drawable=(1600, 900)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 30, in script
+    "But its hard to pin down where exactly it came from"
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 2586, in execute
+    Say.execute(self)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/exports/sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1471, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1117, in do_display
+    display_say(who,
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2748, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 480, in visit_all
+    callback(self)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2748, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 491, in per_interact
+    self.update()
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 243, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 245, in execute
+    hbox:
+  File "game/screens.rpy", line 250, in execute
+    if hasflyer == 1:
+  File "game/screens.rpy", line 250, in <module>
+    if hasflyer == 1:
+NameError: name 'hasflyer' is not defined
+
+While running game code:
+  File "game/script.rpy", line 30, in script
+    "But its hard to pin down where exactly it came from"
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 243, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 245, in execute
+    hbox:
+  File "game/screens.rpy", line 250, in execute
+    if hasflyer == 1:
+  File "game/screens.rpy", line 250, in <module>
+    if hasflyer == 1:
+NameError: name 'hasflyer' is not defined
+Resetting cache.
+Early init took 592.42s
+Loading error handling took 0.08s
+Loading script took 1.15s
+Loading save slot metadata took 0.06s
+Loading persistent took 0.00s
+Running init code took 0.16s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
+Dump and make backups took 0.37s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.05s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Interface start took 0.75s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1600, 900)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1600, 900) drawable=(1600, 900)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 30, in script
+    "But its hard to pin down where exactly it came from"
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 2586, in execute
+    Say.execute(self)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/exports/sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1471, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1117, in do_display
+    display_say(who,
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2748, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 480, in visit_all
+    callback(self)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2748, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 491, in per_interact
+    self.update()
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 243, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 245, in execute
+    hbox:
+  File "game/screens.rpy", line 250, in execute
+    if hasflyer == 1:
+  File "game/screens.rpy", line 250, in <module>
+    if hasflyer == 1:
+NameError: name 'hasflyer' is not defined
+
+While running game code:
+  File "game/script.rpy", line 30, in script
+    "But its hard to pin down where exactly it came from"
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 238, in execute
+    screen quick_menu():
+  File "game/screens.rpy", line 243, in execute
+    if quick_menu:
+  File "game/screens.rpy", line 245, in execute
+    hbox:
+  File "game/screens.rpy", line 250, in execute
+    if hasflyer == 1:
+  File "game/screens.rpy", line 250, in <module>
+    if hasflyer == 1:
+NameError: name 'hasflyer' is not defined
+Resetting cache.
+Early init took 642.89s
+Loading error handling took 0.08s
+Loading script took 0.97s
+Loading save slot metadata took 0.06s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
+Dump and make backups took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.15s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.06s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.79s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1600, 900)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1600, 900) drawable=(1600, 900)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.02s
+Load screen analysis took 0.14s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
 Running _start took 0.01s
-Interface start took 1.66s
+Resetting cache.
+Early init took 743.94s
+Loading error handling took 0.10s
+Loading script took 0.46s
+Loading save slot metadata took 0.06s
+Loading persistent took 0.00s
+Running init code took 0.14s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.18s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.06s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.87s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1600, 900)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1600, 900) drawable=(1600, 900)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 765.84s
+Loading error handling took 0.10s
+Loading script took 0.60s
+Loading save slot metadata took 0.12s
+Loading persistent took 0.00s
+Running init code took 0.13s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
+Index archives took 0.00s
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.15s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.10s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.22s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.86s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)

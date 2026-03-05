@@ -6,7 +6,7 @@ define char3 = Character("PlaceholderScientist")
 define kit = Character ("Weirdo on a Screen")
 #define e= Character("Erzähler")
 define y= Character("[name]")
-
+default hasflyer = 0
 
 
 label start:
@@ -25,6 +25,7 @@ label start:
     $ pronoun1 = "their"
     $ name = "'You'"
     $ convincesecurityfail = 0
+    
     "A loud alarm rings all throughout the ship"
     "But its hard to pin down where exactly it came from"
     "You start looking around, trying to find out what broke this time"
