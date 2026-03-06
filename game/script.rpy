@@ -10,6 +10,8 @@ default hasflyer = 0
 
 
 label start:
+    $ notdemo = 0
+    $ config.menu_include_disabled = True
     $ convention = 0
     $ family = 0
     $ home = 0
@@ -48,7 +50,7 @@ label choice_no1:
         "Go over to him and try to comfort him":
             $mean -= 1
             jump comforttheweirdguy
-        "Nah.":
+        "Nah." if notdemo == 1:
             jump end
 label comforttheweirdguy:
     "You approach the guy in the corner."
@@ -234,7 +236,7 @@ label story2:
     menu:
         "Sounds good!":
             jump soundsgood
-        "Id rather not do that.":
+        "Id rather not do that." if notdemo == 1:
             jump end 
 label soundsgood:
     if mean ==1:
@@ -251,11 +253,11 @@ label soundsgood:
                 menu:
                     "Sure":
                         jump bridge
-                    "What are the other options?":
+                    "What are the other options?" if notdemo == 1:
                         char3 "Lets have a look at the floor plan."
                         char3 "Does anything here look like a good choice to you?"
                         jump end
-            "Let me have a look at the floorplan.":
+            "Let me have a look at the floorplan." if notdemo == 1:
                 jump end
         
 #after sounds good:

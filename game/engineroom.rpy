@@ -1,0 +1,23 @@
+label engineroomafterwaiting:
+    "You enter the engine room."
+    y "What-!?"
+    "In front of you, on the ground, lies a man in an important looking uniform."
+    "The captain, you assume."
+    "And lets just say he doesnt look very healthy right now."
+    "As you look up at the rest of the room, you can see that there seems to be loose cables hanging out of a corner at the ceiling, and the engine controls in the middle of the room look strangely damaged."
+    "It looks almost as if they exploded, pieces shattered all around the room."
+    "Its also getting harder to breathe, altough there is barely any visible smoke."
+    char3 "Why are you just standing there!?"
+    "Scienceguyplaceholder rushes towards the man lying on the floor, frantically trying to check his pulse."
+    char3 "Shit how do I do this???"
+    "You decide to go help after all."
+    "As you hold your fingers to his wrist you can feel the faintest pulse."
+    "He seems to be breathing as well."
+    y "He's alive, its ok."
+    y "How about we try to get him out of this room, inhaling whatever gas is in the air here cant be good for either of us."
+    char3 "That- thats a good idea."
+    "He looks like he's about to cry. Understandable. You yourself feel very uncomfortable with this situation."
+    "You manage to drag the mans body out of the engine room together. Well, you did most of the work in the end."
+    if mean <=1:
+        "But you cant really hold it against scienceguyplaceholder. He doesnt seem very physically strong anyway, and he's not in the best mental state right now."
+    jump end

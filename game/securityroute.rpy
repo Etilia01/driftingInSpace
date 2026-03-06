@@ -40,7 +40,7 @@ label smalltalk:
         "Im visiting family.":
             char3 "Oh thats nice."
             char3 "Always good to visit from time to time hm?"
-            jump end
+            jump talkbridge
         "Going on vacation!":
             char3 "Oh cool! Where are you going exactly?"
             menu:
@@ -123,7 +123,9 @@ label convincethem:
         char2 "Look, I dont think were getting anywhere with this."
         char2 "I have to ask you to leave. If you dont do it on your own, I will have to use force."
         char3 "Were so so sorry, of course well leave!"
-        jump end
+        "(Because this is a demo and there is no other route right now, you get another try. Use it wisely)"
+        $ convincesecurityfail = 0
+        jump convincethem
     else:
         menu:
             "Its an emergency, so it should be fine.":
@@ -148,16 +150,16 @@ label convincethem:
                         char2 "And if it was that bad, it would be even more important for you to get there as fast as possible."
                         char3 "Hm. What do you think [name]?"
                         menu:
-                            "We should go look for him.":#
+                            "We should go look for him.":
                                 char3 "If you say so... Ok."
                                 char3 "Where do we need to go?"
                                 char2 "The captain should be in the engine room."
                                 char2 "Apparently there was a minor malfunction there, so thats where the technician and our mechanic went, and where our captain searched for them."
                                 char3 "Alright, then lets go!"
                                 jump waytoengineroom
-                            #"No, thats their job, not ours.":
-                                #jump end
-                    "Go get the captain":
+                            "No, thats their job, not ours." if notdemo == 1:
+                                jump end
+                    "Go get the captain" if notdemo == 1:
                         jump end
             "We're staff actually.":
                 char2 "Then show me your ids please."
@@ -219,8 +221,20 @@ label convincethem:
                 $ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left.")
                 char3 "Alright, lets continue to the engine room!"
                 
-                jump end
+                jump continuetoroom
             "No":
                 char3 "Ok. Tell me if you change your mind later."
                 y "I will, thanks."
+                jump continuetoroom
+    
+    label continuetoroom:
+        "You finally arrive at the engine room, and immediately notice that something is wrong."
+        "The door is wide open, but you cant hear anything from the inside."
+        "Even if the engine was silent somehow, you should at least hear the three people who should be inside the room, shouldnt you?"
+        char3 "Something feels off..."
+        char3 "Are you sure we should go in there...?"
+        menu:
+            "Go inside the engine room":
+                jump engineroomafterwaiting
+            "Go get the security guard for help" if notdemo == 1:
                 jump end
