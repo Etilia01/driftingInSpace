@@ -25,6 +25,7 @@ label start:
     $ pronoun1 = "their"
     $ name = "'You'"
     $ convincesecurityfail = 0
+    scene bg hallway
     
     "A loud alarm rings all throughout the ship"
     "But its hard to pin down where exactly it came from"

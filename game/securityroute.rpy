@@ -216,6 +216,8 @@ label convincethem:
                     y "Thank you!"
                 $ hasflyer = 1
                 "You put the flyer in your pocket."
+                $ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left.")
+                char3 "Alright, lets continue to the engine room!"
                 
                 jump end
             "No":
