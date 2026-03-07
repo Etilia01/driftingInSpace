@@ -1,9 +1,10 @@
 ﻿# Start script
 
 define char1 = Character("PlaceholderBubblyGirl")
-define char2 = Character("PlaceholderSecurityGuard")
-define char3 = Character("PlaceholderScientist")
+define char2 = Character("Wren")
+define char3 = Character("Tritici")
 define kit = Character ("Weirdo on a Screen")
+define captain: Character ("Captain")
 #define e= Character("Erzähler")
 define y= Character("[name]")
 default hasflyer = 0
