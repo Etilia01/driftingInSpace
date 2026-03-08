@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 186: expected statement.
-    scientistlikes -=1
-                    ^
-
-File "game/script.rpy", line 190: expected statement.
-    scientistlikes -=1
-                    ^
+File "game/script.rpy", line 7: expected '=' not found.
+    define captain: Character ("Captain")
+                  ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Tue Feb 24 09:53:55 2026
+Sat Mar  7 19:44:44 2026

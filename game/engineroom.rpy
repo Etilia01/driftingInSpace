@@ -35,4 +35,57 @@ label engineroomafterwaiting:
     captain "The people that I was looking for here, Amelia and Parker, are our technician and mechanic. Wren is our head of security, they should be guarding the bridge right now."
     captain "She's a good friend of mine, as such I dont want them to endanger themselves. But I am afraid I am currently unable to act as needed to get the situation under control myself."
     captain "So plan change - inform Wren of what happened, and let her decide how to handle it. But do warn them, the saboteur is armed with some sort of ranged weapon."
-    jump end
+    menu:
+        "We can go after the saboteur!":
+            captain "You would do that...?"
+            captain "Under normal circumstances I wouldnt allow it, but we cant lose any more time."
+            captain "Sure, go after them. I suspect theyre trying to get to the power generator. Since they attacked the engine their goal must be to incapacitate the ship."
+            "Tritici helps him get up, and the Captain starts walking towards the bridge."
+            "He turns around once more."
+            captain "What are you waiting for? Go!"
+            "You start running towards the power generator room, or rather Tritici starts doing that, and you follow him, trusting him to know the right way."
+            jump end
+        "We can go tell Wren!" if notdemo == 1:
+            jump end
+        "We dont even work here..." if notdemo == 1:
+            jump end
+
+label afterpowergen:
+    
+    y "Maybe there's a clue in what happened in the engine room..."
+    "You walk back there to look at it."
+    y "Hm... I know! Its..."
+    menu:
+        "...the engine":
+            y "No, that cant be it..."
+            jump end
+        "...the blood":
+            y "No, that cant be it..."
+            jump end
+        "...the cables":
+            y "See those ripped out cables in the corner?"
+            y "I bet that was a security camera!"
+            y "Theyre all over the ship! We can use them to find the saboteurs location!"
+            char3 "But why didnt the broken camera here for example alert Wren to the situation sooner?"
+            y "The board computer is broken, remember? That was why the captain went looking for the technician in the first place."
+            char3 "That makes sense. But then how are we going to access the cameras? The technician was kidnapped, she cant help us repair the computer."
+            y "Arent you some sciency guy, cant you do it?"
+            char3 "Im an agriculture expert."
+            y "Oh."
+            char3 "Oh indeed. Lets just go back to the bridge and see if theyve found a solution there."
+            "The both of you rush back to the bridge, where you find an exhausted captain sitting inside the room."
+            captain "Ah, hello. It turns out Ive sent you to the wrong place."
+            "He gestures to the now (kind of) working screen next to him."
+            captain "All cameras but these two are sending a signal."
+            "He points towards one of them."
+            captain "The engine room,"
+            "He points towards the other."
+            captain "the escape pods."
+            char3 "That means?"
+            captain "That means I have sent Wren and her colleagues there. We can do nothing but wait now."
+            "You wait. After less than five minutes, one of the monitoring screens starts blinking red."
+            "The captain sighs."
+            "After about 40 minutes, an exhausted security guard enters the bridge."
+            "Its Wren."
+            jump end
+           

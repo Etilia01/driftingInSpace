@@ -4,7 +4,7 @@ define char1 = Character("PlaceholderBubblyGirl")
 define char2 = Character("Wren")
 define char3 = Character("Tritici")
 define kit = Character ("Weirdo on a Screen")
-define captain: Character ("Captain")
+define captain= Character ("Captain")
 #define e= Character("Erzähler")
 define y= Character("[name]")
 default hasflyer = 0
@@ -35,8 +35,11 @@ label start:
     "You start looking around, trying to find out what broke this time"
     "Eventually you give up, going back to the main hall."
     #animation of giant screen thingy with kit on it
+    play voice "audio/voice/kit/kitmorning.ogg"
     kit "Morning."
+    play voice "audio/voice/kit/kitquarantined.ogg"
     kit "So youre quarantined now."
+    play voice "audio/voice/kit/goodluck.ogg"
     kit "Good luck fellas"
     #screen shuts off with glitch effects
     y "huh."
