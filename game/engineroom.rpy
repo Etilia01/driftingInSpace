@@ -44,6 +44,11 @@ label engineroomafterwaiting:
             "He turns around once more."
             captain "What are you waiting for? Go!"
             "You start running towards the power generator room, or rather Tritici starts doing that, and you follow him, trusting him to know the right way."
+            "The ship is relatively quiet, except for some of the lone passengers slowly coming out of their rooms again."
+            "You arrive at the generator room. The door is closed."
+            char3 "Its very calm here... Maybe they havent arrived yet?"
+            y "Its probably been aboout an hour since what happened in the engine room, considering thats when the captain went there."
+            y "They should already be here."
             jump end
         "We can go tell Wren!" if notdemo == 1:
             jump end
