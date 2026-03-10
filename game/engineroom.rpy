@@ -57,7 +57,13 @@ label engineroomafterwaiting:
             menu:
                 "Maybe the captain was wrong?":
                     y "It could be that just rendering the ship unable to move wasnt their goal."
-                    jump afterpowergen
+                    y "Can we guess where they went? Im assuming they went in this general direction, which is why the captain thought the power generator was where they were headed."
+                    $ placeinput = renpy.input("Just where could they have gone...?").strip()
+                    if placeinput == place:
+                        jump end
+                    else:
+                        y "I have no idea..."
+                        jump afterpowergen
                 "Maybe theyre actually not here yet..." if notdemo == 1:
                     jump end
         "We can go tell Wren!" if notdemo == 1:
@@ -107,6 +113,7 @@ label cables:
     "The both of you rush back to the bridge, where you find an exhausted captain sitting inside the room."
     captain "Ah, hello. It turns out Ive sent you to the wrong place."
     "He gestures to the now (kind of) working screen next to him."
+    captain "Wren tried kicking it. Surprisingly, that worked."
     captain "All cameras but these two are sending a signal."
     "He points towards one of them."
     captain "The engine room,"
@@ -121,5 +128,13 @@ label cables:
     char2 "Both Amelia and Parker are doing well- or as well as possible in this situation."
     captain "Thats good to hear. But I assume the saboteur got away?"
     char2 "They did, Im sorry."
-    captain "Its fine. The most important thing is that everyone is safe now."
+    captain "Its fine. The most important thing is that everyone is safe now. Please go to the medical station and get yourself checked. While youre there, tell Amelia to come here once she's feeling good enough."
+    char3 "So what now?"
+    captain "Now Amelia will try to fix the boardcomputer so that we can ask ground to send help. You two can go back to whatever you were doing before. Thank you for trying to help though."
+    "Tritici and you go back to the sections of the ship accessible to passengers."
+    "The rest of your travels go relatively uneventful, and you arrive safely at your destination."
+    "ENDING 1: What great help you were."
+    "Epilogue coming soon!"
     jump end
+    
+    #next ending: dying

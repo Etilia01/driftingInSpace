@@ -8,7 +8,7 @@ define captain= Character ("Captain")
 #define e= Character("Erzähler")
 define y= Character("[name]")
 default hasflyer = 0
-
+default place = Escape Pods
 
 label start:
     $ notdemo = 0
