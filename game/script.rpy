@@ -1,10 +1,14 @@
 ﻿# Start script
 
 define char1 = Character("PlaceholderBubblyGirl")
+define char2unknown = Character("Security Guard")
 define char2 = Character("Wren")
 define char3 = Character("Tritici")
 define kit = Character ("Weirdo on a Screen")
 define captain= Character ("Captain")
+define unknown = Character("???")
+define muster = Character ("Mustermann")
+define tech = Character ("Amelia")
 #define e= Character("Erzähler")
 define y= Character("[name]")
 default hasflyer = 0
@@ -108,7 +112,7 @@ label two:
 
     "He sighs."
     char3 "Im sorry about that just now... Havent had the best day so far."
-    char3 "I should probably introduce myself! Im --."
+    char3 "I should probably introduce myself! Im Tritici."
    
     
     $ name = renpy.input("Whats your name?")

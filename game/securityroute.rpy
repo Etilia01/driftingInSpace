@@ -2,7 +2,7 @@ label bridge:
     "You leave the main hall and walk somewhere in the general direction of the bridge."
     "the silence feels a bit akward"
     menu:
-        "Try to talk to ScienceGuyPlaceholder":
+        "Try to talk to Tritici":
             jump smalltalk
         "Stay silent":
             jump silent
@@ -159,8 +159,12 @@ label convincethem:
                                 jump waytoengineroom
                             "No, thats their job, not ours." if notdemo == 1:
                                 jump end
-                    "Go get the captain" if notdemo == 1:
-                        jump end
+                    "Go get the captain":
+                        char3 "Where do we need to go?"
+                        char2 "The captain should be in the engine room."
+                        char2 "Apparently there was a minor malfunction there, so thats where the technician and our mechanic went, and where our captain searched for them."
+                        char3 "Alright, then lets go!"
+                        jump waytoengineroom2
             "We're staff actually.":
                 char2 "Then show me your ids please."
                 char3 "AAAH Im so sorry, [pronoun1] [ist] just joking!"
@@ -176,7 +180,7 @@ label convincethem:
                 char2 "Then go get it...?"
                 y "I will!"
                 "You confidently turn around and start making your way back."
-                "Scienceguy sprints after you."
+                "Tritici sprints after you."
                 char3 "What do you mean lost it? You dont work here, do you?"
                 y "I dont. But do they really need to know that?"
                 char3 "How are you going to 'prove' that you work here then?"
@@ -205,36 +209,56 @@ label convincethem:
                 $ convincesecurityfail +=1
                 jump convincethem
     
-    label waytoengineroom:
-        "You make your way to the engine room."
-        y "How do you know where we need to go?"
-        char3 "Im always really anxious about getting lost, because I'd be way to scared to ask for help, so I have the layout memorized."
-        char3 "And even if I didnt, I have some of these little flyers they had lying around at checkin with me, those also have a small map."
-        char3 "Do you want one?"
-        menu:
-            "Yes":
-                char3 "Ok, here you go!"
-                if mean <=1:
-                    y "Thank you!"
-                $ hasflyer = 1
-                "You put the flyer in your pocket."
-                $ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left. This can be helpful in the epilogue, depending on which you unlocked.")
-                char3 "Alright, lets continue to the engine room!"
+label waytoengineroom:
+    "You make your way to the engine room."
+    y "How do you know where we need to go?"
+    char3 "Im always really anxious about getting lost, because I'd be way to scared to ask for help, so I have the layout memorized."
+    char3 "And even if I didnt, I have some of these little flyers they had lying around at checkin with me, those also have a small map."
+    char3 "Do you want one?"
+    menu:
+        "Yes":
+            char3 "Ok, here you go!"
+            if mean <=1:
+                y "Thank you!"
+            $ hasflyer = 1
+            "You put the flyer in your pocket."
+            $ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left. This can be helpful in the epilogue, depending on which you unlocked.")
+            char3 "Alright, lets continue to the engine room!"
                 
-                jump continuetoroom
-            "No":
-                char3 "Ok. Tell me if you change your mind later."
-                y "I will, thanks."
-                jump continuetoroom
-    
-    label continuetoroom:
-        "You finally arrive at the engine room, and immediately notice that something is wrong."
-        "The door is wide open, but you cant hear anything from the inside."
-        "Even if the engine was silent somehow, you should at least hear the three people who should be inside the room, shouldnt you?"
-        char3 "Something feels off..."
-        char3 "Are you sure we should go in there...?"
-        menu:
-            "Go inside the engine room":
-                jump engineroomafterwaiting
-            "Go get the security guard for help" if notdemo == 1:
-                jump end
+            jump continuetoroom
+        "No":
+            char3 "Ok. Tell me if you change your mind later."
+            y "I will, thanks."
+            jump continuetoroom
+label waytoengineroom2:
+    "You make your way to the engine room."
+    y "How do you know where we need to go?"
+    char3 "Im always really anxious about getting lost, because I'd be way to scared to ask for help, so I have the layout memorized."
+    char3 "And even if I didnt, I have some of these little flyers they had lying around at checkin with me, those also have a small map."
+    char3 "Do you want one?"
+    menu:
+        "Yes":
+            char3 "Ok, here you go!"
+            if mean <=1:
+                y "Thank you!"
+            $ hasflyer = 1
+            "You put the flyer in your pocket."
+            $ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left. This can be helpful in the epilogue, depending on which you unlocked.")
+            char3 "Alright, lets continue to the engine room!"
+                
+            jump engineroomearly
+        "No":
+            char3 "Ok. Tell me if you change your mind later."
+            y "I will, thanks."
+            jump engineroomearly
+label continuetoroom:
+    "You finally arrive at the engine room, and immediately notice that something is wrong."
+    "The door is wide open, but you cant hear anything from the inside."
+    "Even if the engine was silent somehow, you should at least hear the three people who should be inside the room, shouldnt you?"
+    char3 "Something feels off..."
+    char3 "Are you sure we should go in there...?"
+    menu:
+        "Go inside the engine room":
+            jump engineroomafterwaiting
+        "Go get the security guard for help" if notdemo == 1:
+            jump end

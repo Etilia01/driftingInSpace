@@ -8,7 +8,7 @@ label engineroomafterwaiting:
     "It looks almost as if they exploded, pieces shattered all around the room."
     "Its also getting harder to breathe, altough there is barely any visible smoke."
     char3 "Why are you just standing there!?"
-    "Scienceguyplaceholder rushes towards the man lying on the floor, frantically trying to check his pulse."
+    "Tritici rushes towards the man lying on the floor, frantically trying to check his pulse."
     char3 "Shit how do I do this???"
     "You decide to go help after all."
     "As you hold your fingers to his wrist you can feel the faintest pulse."
@@ -19,13 +19,13 @@ label engineroomafterwaiting:
     "He looks like he's about to cry. Understandable. You yourself feel very uncomfortable with this situation."
     "You manage to drag the mans body out of the engine room together. Well, you did most of the work in the end."
     if mean <=1:
-        "But you cant really hold it against scienceguyplaceholder. He doesnt seem very physically strong anyway, and he's not in the best mental state right now."
+        "But you cant really hold it against Tritici. He doesnt seem very physically strong anyway, and he's not in the best mental state right now."
     "You take a deep breath trying to focus and figure out what to do now."
     captain "Wren...?"
     "The captain seems to be awake."
-    char3 "Good afternoon sir, I am scienceguy. [name] and me found you passed out in the engine room, do you know what happened?"
+    char3 "Good afternoon sir, I am Tritici. [name] and me found you passed out in the engine room, do you know what happened?"
     captain "Passed out...? OH NO!"
-    "He jolts upright, grabbing scienceguys arm."
+    "He jolts upright, grabbing Triticis arm."
     captain "Theres a saboteur on board, they attacked Amelia and Parker! You have to tell Wren, they need to know! Have her get the passengers to the escape pods, and I'll go after the saboteur!"
     "He tries to get up, but doubles over in pain almost immediately."
     char3 "This might be bad timing... But who are these people youre talking about...?"
@@ -137,4 +137,84 @@ label cables:
     "Epilogue coming soon!"
     jump end
     
-    #next ending: dying
+    
+
+
+label engineroomearly:
+    "You arrive at the engine room."
+    "Through the closed door you can hear a loud noise. It almost sounds like an explosion."
+    char3 "Whats going on here!?"
+    "He rushes towards the door, and hits the button to open it."
+    "You go after him."
+    unknown "Dont come closer!"
+    "And come face to face with the barrel of a gun."
+    "Taking a quick look around the room you notice a man in uniform lying on the ground, presumably the captain."
+    "In the corner of the room you see two people in quite similar get-up, just lacking some decorations on their uniforms. Likely the technician and mechanic."
+    "One of the two gestures in your direction, maybe trying to get you to talk to the person in the middle of the room threatening you?"
+    menu:
+        "Try to talk to them":
+            y "What are you trying to do here?"
+            unknown "I just want to leave. Just follow my instructions and you'll be fine."
+            "The woman that gestured to you now slowly moves behind the (heavily damaged) engine and slowly works on removing a steel pipe thats attached to it."
+            menu:
+                "Keep talking to distract them":
+                    y "May I ask who you are?"
+                    unknown "I suppose you can think of me as Erika Mustermann."
+                    y "And why are you threatening us?"
+                    muster "You three-"
+                    "She points to the captain, Tritici and you."
+                    muster "Bad time, wrong place. These guys behind me, I need their help starting the escape pods. Theyre locked for some reason."
+                    "You nod."
+                    y "The quarantine."
+                    muster "The what now?"
+                    y "Thats what the alarm was for, were quarantined for some reason. Of course we cant leave then."
+                    muster "Ah... That was not what I assumed it was. Either way, I NEED to leave right now."
+                    muster "So if you'd let me and these technology people through now..."
+                    y "Alright, but tell me first, why do you need to leave?"
+                    muster "How's that any of your business?"
+                    y "Im just curious."
+                    muster "I may not be that popular with authoritys. And when i heard the alarm I assumed that I was why it rang."
+                    muster "Satisfied with the answer or not, MOVE!"
+                    "And right as she says that, she's hit on the head with a steel pipe"
+                    "And falls over, dropping the gun."
+                    "Tritici reacts quickly, seizing the gun and pointing it at her just in case she gets up again, while the young woman that knocked her out ties her to whats left of the engine."
+                    "After she's done with that, she introduces herself."
+                    tech "Hi, Im Amelia, the ships head technician. Thank you for distracting her. Would you mind standing guard here while Parker, our mechanic, and I bring the captain to the medical station?"
+                    char3 "Sure, were happy to help. But could you please send over some security personell as well?"
+                    char3 "Im a bit concerned about her waking up..."
+                    tech "That was the plan."
+                    "She smiles warmly."
+                    tech "But we cant leave her alone while we wait for them to arrive."
+                    tech "Goodbye."
+                    "She picks up the captain by his arms, and Parker comes over to lift his legs. Together they haul him out the door."
+                    "You wait, occasionally glancing nervously at Mustermann, but she doesnt seem to be waking up anytime soon."
+                    "After a while the security guard you met at the bridge enters the room with a small team, introducing herself as Wren, and telling you to go walk to the medical station to get a checkup, sice you werent needed here anymore."
+                    "You did just that. As expected, both of you were fine, altough Tritici was still a bit shaken, and you were sent back to your cabins."
+                    "It took less then a day for the interdimensional police to arrive and arrest the criminal. Apparently they had been looking for her for quite a while, since she had ties to various illegal weapon smuggling operations, and had been illegally working as a well known mercenary for years."
+                    "They had suspected she was on the ship, hoping a quarantine would prompt her to drop her disguise, but didnt expect to lose contact to the ship and their internal agent before they could inform the crew of this plan."
+                    "Both Tritici and you were interviewed as witnesses and awarded a small monetary prize for the role you played in capturing her."
+                    "They left again, and you dont expect to hear any more of this case."
+                    "ENDING 3: SUCESSFUL ARREST"
+                    "Epilogue coming soon."
+                    jump end
+                "Try to disarm the person threatening you":
+                    "You move closer and reach for their gun."
+                    "They move back a little, panicking and pulling the trigger."
+                    "The people around you watch in shock as you fall over on your back, and the light leaves your eyes."
+                    "ENDING 2: Not an action movie hero"
+                    jump end
+                "Seek cover" if notdemo == 1:
+                    jump end
+                "Try to signal that youre harmless and are going to surrender & cooperate" if notdemo == 1:
+                    jump end
+
+            jump end
+        "Try to get closer and disarm them":
+            "You move closer and reach for their gun."
+            "They move back a little, panicking and pulling the trigger."
+            "The people around you watch in shock as you fall over on your back, and the light leaves your eyes."
+            "ENDING 2: Not an action movie hero"
+            jump end
+        "Try to move out of the room and seek cover" if notdemo == 1:
+            jump end
+    jump end
