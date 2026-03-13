@@ -1,4 +1,4 @@
-﻿# adjust sprite sizes
+﻿# this adjusts sprite sizes
 #tritici
 image tritici idle 1:
     "tritici idle 1.png"
@@ -6,12 +6,22 @@ image tritici idle 1:
 image tritici idle 2:
     "tritici idle 2.png"
     zoom 1.8
+image tritici slight sad:
+    "tritici slight sad.png"
+    zoom 1.8
 image tritici sad:
     "tritici sad.png"
+    zoom 1.8
+image tritici very sad:
+    "tritici very sad.png"
     zoom 1.8
 image tritici shocked:
     "tritici shocked.png"
     zoom 1.8
+image tritici happy 1:
+    "tritici happy 1.png"
+    zoom 1.8
+
 # bubbly
 image bubbly happy:
     "bubbly happy.png"
@@ -25,6 +35,7 @@ image bubbly sad:
 image bubbly shocked:
     "bubbly shocked.png"
 
+#characters
 define char1 = Character("PlaceholderBubblyGirl")
 define char2unknown = Character("Security Guard")
 define char2 = Character("Wren")
@@ -36,10 +47,15 @@ define muster = Character ("Mustermann")
 define tech = Character ("Amelia")
 #define e= Character("Erzähler")
 define y= Character("[name]")
+
+#variables that need to be preloaded for the game to work apparently. Basically input stuff for riddles and stuff that determines if things like certain menus can be accessed.
 default hasflyer = 0
 default place = "Escape Pods"
 
+
+#game starts here
 label start:
+    # a bunch more variables that only get important later in the game, which is why they can be declared within start. The two below are how i do greyed out choices. Prob not the best way but oh well.
     $ notdemo = 0
     $ config.menu_include_disabled = True
     $ convention = 0
@@ -50,15 +66,18 @@ label start:
     $ scientiststable = 0
     $ mean = 0
     $ jokester = 0
+    $ convincesecurityfail = 0
+
+    #these are for dialogue changes depending on player input
     $ ist = "is"
     $ was = "was"
     $ pronoun1 = "they"
     $ pronoun1 = "them"
     $ pronoun1 = "their"
     $ name = "'You'"
-    $ convincesecurityfail = 0
-    scene bg hallway
     
+    # starts a new scene, meaning it hides all sprites and backgrounds and loads hallway
+    scene bg hallway
     "A loud alarm rings all throughout the ship"
     "But its hard to pin down where exactly it came from"
     "You start looking around, trying to find out what broke this time"
@@ -104,6 +123,7 @@ label comforttheweirdguy:
         "Because I dont like you.":
             jump mean
 label mean:
+    show tritici very sad
     char3 "Why would you say something like thaaaat..."
     "He's sobbing uncontrollably now"
     $scientistlikes -= 1
@@ -119,6 +139,7 @@ label conspiracy:
     char3 "Do you seriously think that?"
     if jokester == 1:
         y "...I was joking"
+        show tritici happy 1
         char3 "Oh. Ok."
         "He looks relieved."
         jump two
@@ -132,12 +153,13 @@ label conspiracy:
 label badluck:
     char3 "I know, I know..."
     char3 "I just wanted to be a little dramatic, haha..."
-    show tritici idle 1
+    show tritici slight sad
     "He still seems quite upset, but he's at least trying to act fine for now."
     jump two      
 
 label two:
     if scientiststable <= -1:
+        show tritici slight sad
         "After a few minutes he (at least kind of) brings himself stop crying."
 
     "He sighs."
@@ -162,6 +184,8 @@ label two:
             else:
                 jump name
 label name:
+    if mean <=0 and scientistlikes >=1:
+        show tritici happy 1
     
     char3 "Nice to meet you [name]"
     if mean >= 1:
