@@ -23,7 +23,7 @@ label engineroomafterwaiting:
     "You take a deep breath trying to focus and figure out what to do now."
     captain "Wren...?"
     "The captain seems to be awake."
-    char3 "Good afternoon sir, I am Tritici. [name] and me found you passed out in the engine room, do you know what happened?"
+    char3 "Hi- Uh I mean good afternoon sir, I am Tritici. [name] and me found you passed out in the engine room, do you know maybe happen to know what happened?"
     captain "Passed out...? OH NO!"
     "He jolts upright, grabbing Triticis arm."
     captain "Theres a saboteur on board, they attacked Amelia and Parker! You have to tell Wren, they need to know! Have her get the passengers to the escape pods, and I'll go after the saboteur!"
@@ -68,7 +68,28 @@ label engineroomafterwaiting:
                     jump end
         "We can go tell Wren!" if notdemo == 1:
             jump end
-        "We dont even work here..." if notdemo == 1:
+        "We dont even work here...":
+            char3 "...What?"
+            y "Come on, dont pretend you actually want to play the hero here."
+            y "Theres no way this will end well."
+            if mean >=2:
+                "This is so stupid. What do we care what happens to these people? We dont even know them. Honestly, for all I care they could suffocate in space."
+                char3 "Thats- I dont think you should say things like that..."
+            y "Either way, Im not helping."
+            captain "That is your choice."
+            captain "You are right, you have nothing to do with this. I sincerly apologise for trying to drag you into this debacle."
+            captain "I have to admit that it is a bit disappointing how you dont want to help with something as harmless as delivering a message, but I understand where you are coming from with this decision."
+            "Tritici helps him get up, and the captain slowly limps to the bridge."
+            y "Well, I will be going back to my cabin."
+            char3 "Good for you I guess. But Im going to try my best to help the captain."
+            char3 "...Even if my best isnt a lot."
+            "He walks over to the captain to help him. Thats the last you see of the two before you turn around and go to your cabin, where you spent the rest of the day, reading your favorite book."
+            if mean <=0:
+                "You feel a bit bad about not helping out, but quickly shake off that feeling. You probably werent even qualified to handle that kind of situation!"
+            "After a few hours the ship starts moving again, and everything goes as planned from there on."
+            "At dinner you hear something about the criminal who had sabotaged the engine escaping, but you dont pay much mind to it, and forget about it soon after."
+            "You leave the ship at your planned stop a few days later, and never think back to this incident."
+            "ENDING 4: The best choice (for yourself)"
             jump end
 
 label afterpowergen:

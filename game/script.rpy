@@ -1,4 +1,29 @@
-﻿# Start script
+﻿# adjust sprite sizes
+#tritici
+image tritici idle 1:
+    "tritici idle 1.png"
+    zoom 1.8
+image tritici idle 2:
+    "tritici idle 2.png"
+    zoom 1.8
+image tritici sad:
+    "tritici sad.png"
+    zoom 1.8
+image tritici shocked:
+    "tritici shocked.png"
+    zoom 1.8
+# bubbly
+image bubbly happy:
+    "bubbly happy.png"
+    zoom 1.8
+image bubbly idle:
+    "bubbly idle.png"
+    zoom 1.8
+image bubbly sad:
+    "bubbly sad.png"
+    zoom 1.8
+image bubbly shocked:
+    "bubbly shocked.png"
 
 define char1 = Character("PlaceholderBubblyGirl")
 define char2unknown = Character("Security Guard")
@@ -12,7 +37,7 @@ define tech = Character ("Amelia")
 #define e= Character("Erzähler")
 define y= Character("[name]")
 default hasflyer = 0
-default place = Escape Pods
+default place = "Escape Pods"
 
 label start:
     $ notdemo = 0
@@ -47,6 +72,7 @@ label start:
     kit "Good luck fellas"
     #screen shuts off with glitch effects
     y "huh."
+    show tritici shocked
     char3 "WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHA-"
     "You only now notice the guy standing in the corner of the hall."
     #camera pans to scientist guy
@@ -61,6 +87,7 @@ label choice_no1:
         "Nah." if notdemo == 1:
             jump end
 label comforttheweirdguy:
+    show tritici sad
     "You approach the guy in the corner."
     "Hes crying now."
     char3 "Why me... waaahhh"
@@ -85,8 +112,10 @@ label mean:
     jump two
 
 label conspiracy:
+    show tritici idle 2
     "You shocked him so much that he stopped crying."
     char3 "What do you mean by that?"
+    show tritici idle 1
     char3 "Do you seriously think that?"
     if jokester == 1:
         y "...I was joking"
@@ -103,6 +132,7 @@ label conspiracy:
 label badluck:
     char3 "I know, I know..."
     char3 "I just wanted to be a little dramatic, haha..."
+    show tritici idle 1
     "He still seems quite upset, but he's at least trying to act fine for now."
     jump two      
 
@@ -112,6 +142,7 @@ label two:
 
     "He sighs."
     char3 "Im sorry about that just now... Havent had the best day so far."
+    show tritici idle 2
     char3 "I should probably introduce myself! Im Tritici."
    
     
@@ -124,11 +155,17 @@ label two:
             "Ha funny. Sure, go ahead."
             jump name
         else:
-            jump name
+            if name == "Deez Nuts":
+                "Wow youre either very old and unfunny or a toddler. And also unfunny."
+                "But I suppose it could be worse. Go ahead."
+                jump name
+            else:
+                jump name
 label name:
     
     char3 "Nice to meet you [name]"
     if mean >= 1:
+        show tritici idle 1
         "It sounds forced."
     char3 "And what pronouns should I refer to you as?"
     menu:

@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 7: expected '=' not found.
-    define captain: Character ("Captain")
-                  ^
+File "game/script.rpy", line 145: if statement expects a non-empty block.
+    if name == "Deez Nuts":
+                           ^
+
+File "game/script.rpy", line 148: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Mar  7 19:44:44 2026
+Fri Mar 13 16:02:59 2026
