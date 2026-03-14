@@ -1,39 +1,45 @@
 ﻿# this adjusts sprite sizes
 #tritici
 image tritici idle 1:
-    "tritici idle 1.png"
+    "Tritici/tritici idle 1.png"
     zoom 1.8
 image tritici idle 2:
-    "tritici idle 2.png"
+    "Tritici/tritici idle 2.png"
+    zoom 1.8
+image tritici idle front:
+    "Tritici/tritici idle front.png"
     zoom 1.8
 image tritici slight sad:
-    "tritici slight sad.png"
+    "Tritici/tritici slight sad.png"
     zoom 1.8
 image tritici sad:
-    "tritici sad.png"
+    "Tritici/tritici sad.png"
     zoom 1.8
 image tritici very sad:
-    "tritici very sad.png"
+    "Tritici/tritici very sad.png"
     zoom 1.8
 image tritici shocked:
-    "tritici shocked.png"
+    "Tritici/tritici shocked.png"
     zoom 1.8
 image tritici happy 1:
-    "tritici happy 1.png"
+    "Tritici/tritici happy 1.png"
+    zoom 1.8
+image tritici happy 2:
+    "Tritici/tritici happy 2.png"
     zoom 1.8
 
 # bubbly
 image bubbly happy:
-    "bubbly happy.png"
+    "Bubbly/bubbly happy.png"
     zoom 1.8
 image bubbly idle:
-    "bubbly idle.png"
+    "Bubbly/bubbly idle.png"
     zoom 1.8
 image bubbly sad:
-    "bubbly sad.png"
+    "Bubbly/bubbly sad.png"
     zoom 1.8
 image bubbly shocked:
-    "bubbly shocked.png"
+    "Bubbly/bubbly shocked.png"
 
 #characters
 define char1 = Character("PlaceholderBubblyGirl")
@@ -146,6 +152,7 @@ label conspiracy:
     else:
         y "Of course I do!"
         y "Theyre trying to get you!"
+        show tritici idle 1
         char3 "Thats so stupid."
         char3 "You are stupid if you believe that. I have nothing to do with 'the government'. Which one do you even mean??? Were not even on a planet right now???? This part of space doesnt even have a government????????????"
         $scientistlikes -= 1
@@ -224,6 +231,7 @@ label pronounselect:
     char3 "[pronoun1]/[pronoun2]/[pronoun3], is that right?"
     menu:
         "Yes":
+            show tritici idle 2
             char3 "Oh, and does that work like for example they/them, that i would refer to you in plural? Like [pronoun1] are an interesting person?"
             menu:
                 "Yes":
@@ -260,15 +268,19 @@ label reasonable:
     jump story2
 label mean2:
     if mean >=2:
+        show tritici shocked
         char3 "Why are you like this!?"
+        show tritici sad
         char3 "What did I do to you to deserve you saying things like that!?"
         $ scientistlikes -=1
     else:
+        show tritici slight sad
         char3 "Thats...thats a bit mean, dont you think?"
         char3 "But no, that is definitely not why."
         $ scientistlikes -=1
 label criminalidea1:
     if jokester >=2:
+        show tritici happy 1
         char3 "Ah another joke? How funny!"
         char3 "Of course we have a dangerous criminal onboard - Me Mr.Villanguy! I do very evil things, like jaywalking!"
         char3 "That was sarcasm, in case you didnt notice."
@@ -282,11 +294,14 @@ label criminalidea1:
         jump story2
 label criminalidea2:
     if jokester >=1:
+        show tritici happy 1
         char3 "Ah another joke? How funny-"
         y "No."
+        show tritici idle 2
         char3 "What do you mean no?"
         y "I wasnt joking."
         char3 "Oh-"
+        show tritici idle 1
         char3 "Well, I think thats highly unlikely to be the case."
         y "If you say so..."
         jump story2 
@@ -300,6 +315,7 @@ label criminalidea2:
 
 label story2:
     if mean >= 2:
+        show tritici idle 1
         "He sighs, clearly annoyed."
     char3 "Well, maybe someone else knows more than us. Lets look for some other passengers and ask them about it."
     menu:
@@ -315,6 +331,7 @@ label soundsgood:
         char3 "Ok. We'll look for the captain, they should be on the bridge."
         jump bridge
     else:
+        show tritici happy 1
         char3 "Alright! Where should we look first?"
         menu:
             "You choose.":
