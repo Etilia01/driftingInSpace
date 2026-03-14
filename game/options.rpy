@@ -1,10 +1,6 @@
-﻿## This file contains options that can be changed to customize your game.
-##
-## Lines beginning with two '#' marks are comments, and you shouldn't uncomment
-## them. Lines beginning with a single '#' mark are commented-out code, and you
-## may want to uncomment them when appropriate.
-
-
+﻿
+#the thing that makes greyed out choices show up, version two because the one inside start isnt reliable apparently
+define config.menu_include_disabled = True
 ## Basics ######################################################################
 
 ## A human-readable name of the game. This is used to set the default window

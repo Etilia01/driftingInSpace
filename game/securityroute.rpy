@@ -44,6 +44,7 @@ label smalltalk:
             else:
                 char3 "Im sure its going to be really fun!"
                 y "From what ive heard, it definitely will be!"
+                jump talkbridge
         "Im visiting family.":
             show tritici happy 1
             char3 "Oh thats nice."

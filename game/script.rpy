@@ -61,9 +61,9 @@ default place = "Escape Pods"
 
 #game starts here
 label start:
-    # a bunch more variables that only get important later in the game, which is why they can be declared within start. The two below are how i do greyed out choices. Prob not the best way but oh well.
-    $ notdemo = 0
     $ config.menu_include_disabled = True
+    $ notdemo = 0
+    # a bunch more variables that only get important later in the game, which is why they can be declared within start. The two above are how i do greyed out choices. Prob not the best way but oh well.
     $ convention = 0
     $ family = 0
     $ home = 0
