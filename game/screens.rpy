@@ -241,12 +241,14 @@ screen quick_menu():
     zorder 100
 
     if quick_menu:
-
+        
+        add "gui/namebox.png" xalign 0.5 yalign 0.0
         hbox:
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.0
+            
             if hasflyer == 1:
                 textbutton _("Open Flyer") action ToggleScreen("mapScreen")
             textbutton _("History") action ShowMenu('history')

@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 145: if statement expects a non-empty block.
-    if name == "Deez Nuts":
-                           ^
-
-File "game/script.rpy", line 148: expected statement.
-    else:
-        ^
+File "game/screens.rpy", line 245: 'padding' is not a keyword argument or valid child of the screen statement.
+    padding (20, 10, 20, 10) 
+           ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri Mar 13 16:02:59 2026
+Sun Mar 15 21:58:08 2026
