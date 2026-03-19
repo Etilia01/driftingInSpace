@@ -241,8 +241,10 @@ screen quick_menu():
     zorder 100
 
     if quick_menu:
-        
-        add "gui/namebox.png" xalign 0.5 yalign 0.0
+        if hasflyer == 0:
+            add "gui/menubox.png" xalign 0.5 yalign 0.0 xsize 500 ysize 60
+        if hasflyer == 1:
+            add "gui/menubox.png" xalign 0.5 yalign 0.0 xsize 570 ysize 60
         hbox:
             style_prefix "quick"
 

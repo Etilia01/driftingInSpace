@@ -1,61 +1,58 @@
-2026-03-15 20:28:28 UTC
+2026-03-19 18:52:07 UTC
 Linux-6.18.9-arch1-2-x86_64-with-glibc2.43
 Ren'Py 8.3.7.25031702
 
-Early init took 0.09s
-Loading error handling took 0.08s
-Loading script took 0.48s
+Early init took 0.11s
+Loading error handling took 0.26s
+Loading script took 1.67s
 Loading save slot metadata took 0.14s
 Loading persistent took 0.00s
-Running init code took 0.10s
+Running init code took 0.34s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
+Reloading save slot metadata took 0.28s
 Index archives took 0.00s
-Dump and make backups took 0.08s
+Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
+Dump and make backups took 0.11s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.08s
+Initial gc took 0.09s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.09s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.18s
+Load screen analysis took 0.03s
+Analyze screens took 0.04s
+Save screen analysis took 0.06s
+Prepare screens took 0.19s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.07s
+Save bytecode. took 0.09s
 Running _start took 0.00s
-Interface start took 1.02s
+Interface start took 0.97s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)
 swap interval: 1 frames
-Fullscreen mode.
+Windowed mode.
 Vendor: "b'Intel'"
 Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
 Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1600, 900) drawable=(1600, 900)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
-Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 258.60s
-Loading error handling took 0.12s
-Loading script took 0.33s
-Loading save slot metadata took 0.67s
+Early init took 19.22s
+Loading error handling took 0.56s
+Loading script took 1.28s
+Loading save slot metadata took 0.23s
 Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
+Running init code took 0.12s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.13s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Dump and make backups took 0.08s
+Dump and make backups took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.07s
@@ -64,14 +61,14 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.11s
+Load screen analysis took 0.09s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
 Prepare screens took 0.12s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.50s
+Interface start took 0.67s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)
@@ -84,418 +81,18 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 773.68s
-Loading error handling took 0.17s
-Loading script took 0.30s
-Loading save slot metadata took 0.03s
+Early init took 55.41s
+Loading error handling took 0.05s
+Loading script took 0.64s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.50s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 795.93s
-Loading error handling took 0.04s
-Loading script took 0.31s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.05s
+Running init code took 0.06s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
+Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
 Dump and make backups took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.56s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 828.31s
-Loading error handling took 0.04s
-Loading script took 0.26s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.70s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 903.10s
-Loading error handling took 0.04s
-Loading script took 0.22s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.50s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 914.24s
-Loading error handling took 0.03s
-Loading script took 0.26s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.04s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.57s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1119.68s
-Loading error handling took 0.06s
-Loading script took 0.26s
-Loading save slot metadata took 0.07s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.03s
-Save screen analysis took 0.04s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.62s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1138.54s
-Loading error handling took 0.03s
-Loading script took 0.26s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.50s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1149.88s
-Loading error handling took 0.04s
-Loading script took 0.32s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.54s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1179.13s
-Loading error handling took 0.04s
-Loading script took 0.30s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.64s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1193.10s
-Loading error handling took 0.03s
-Loading script took 0.26s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.59s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1270.65s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.13s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.10s
@@ -507,7 +104,7 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.03s
 Save screen analysis took 0.04s
-Prepare screens took 0.13s
+Prepare screens took 0.12s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
@@ -524,21 +121,21 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1284.62s
-Loading error handling took 0.04s
-Loading script took 0.24s
+Early init took 87.58s
+Loading error handling took 0.03s
+Loading script took 0.38s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.06s
+Running init code took 0.05s
 Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
+Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
 Dump and make backups took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.08s
+Initial gc took 0.07s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
@@ -547,7 +144,7 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.14s
+Prepare screens took 0.12s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
@@ -564,9 +161,9 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1298.54s
-Loading error handling took 0.04s
-Loading script took 0.29s
+Early init took 181.64s
+Loading error handling took 0.03s
+Loading script took 0.51s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
 Running init code took 0.05s
@@ -585,13 +182,13 @@ Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.03s
+Analyze screens took 0.02s
 Save screen analysis took 0.03s
 Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.03s
 Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.60s
+Interface start took 0.51s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)
@@ -604,13 +201,53 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1321.56s
-Loading error handling took 0.04s
-Loading script took 0.27s
+Early init took 247.02s
+Loading error handling took 0.03s
+Loading script took 0.36s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
+Dump and make backups took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.50s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1600, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 264.23s
+Loading error handling took 0.03s
+Loading script took 0.48s
+Loading save slot metadata took 0.06s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
@@ -627,11 +264,11 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
 Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.62s
+Interface start took 0.55s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)
@@ -644,14 +281,14 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1335.60s
+Early init took 278.33s
 Loading error handling took 0.04s
-Loading script took 0.30s
+Loading script took 0.53s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.06s
+Running init code took 0.05s
 Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
+Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
@@ -666,9 +303,9 @@ Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.03s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Interface start took 0.54s
@@ -683,19 +320,25 @@ Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1431, 805) drawable=(1431, 805)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1431, 805) drawable=(1431, 805)
+Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1344.96s
-Loading error handling took 0.03s
-Loading script took 0.26s
+Early init took 299.91s
+Loading error handling took 0.04s
+Loading script took 0.42s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.05s
+Running init code took 0.07s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
+Dump and make backups took 0.10s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.09s
@@ -707,8 +350,8 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.00s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Interface start took 0.51s
@@ -721,117 +364,39 @@ Vendor: "b'Intel'"
 Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
 Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
+Screen sizes: virtual=(1920, 1080) physical=(1431, 805) drawable=(1431, 805)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1565.25s
-Loading error handling took 0.05s
-Loading script took 0.48s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.47s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1582.74s
+Early init took 394.93s
 Loading error handling took 0.03s
-Loading script took 0.35s
-Loading save slot metadata took 0.04s
+Loading script took 0.51s
+Loading save slot metadata took 0.05s
 Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
 Dump and make backups took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.08s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.47s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1606.06s
-Loading error handling took 0.03s
-Loading script took 0.34s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.15s
 Save pyanalysis. took 0.03s
 Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.47s
+Interface start took 0.55s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)
@@ -841,116 +406,15 @@ Vendor: "b'Intel'"
 Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
 Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
+Screen sizes: virtual=(1920, 1080) physical=(1431, 805) drawable=(1431, 805)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1733.32s
-Loading error handling took 0.03s
-Loading script took 0.54s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.47s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1779.60s
-Loading error handling took 0.07s
-Loading script took 0.37s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 245: 'padding' is not a keyword argument or valid child of the screen statement.
-    padding (20, 10, 20, 10) 
-           ^
-DPI scale factor: 1.000000
-Interface start took 0.45s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1799.27s
-Loading error handling took 0.03s
-Loading script took 0.40s
+Early init took 471.91s
+Loading error handling took 0.04s
+Loading script took 0.46s
 Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.03s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.47s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1827.05s
-Loading error handling took 0.05s
-Loading script took 0.62s
-Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
 Running init code took 0.05s
 Loading analysis data took 0.03s
@@ -968,13 +432,13 @@ Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.03s
+Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.15s
+Prepare screens took 0.12s
 Save pyanalysis. took 0.03s
-Save bytecode. took 0.04s
+Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.48s
+Interface start took 0.50s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)
@@ -984,185 +448,20 @@ Vendor: "b'Intel'"
 Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
 Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
+Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1910.42s
+Early init took 489.77s
 Loading error handling took 0.03s
-Loading script took 0.40s
-Loading save slot metadata took 0.05s
+Loading script took 0.36s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.07s
+Running init code took 0.06s
 Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.15s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.47s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1974.65s
-Loading error handling took 0.04s
-Loading script took 0.21s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.53s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2056.67s
-Loading error handling took 0.03s
-Loading script took 0.25s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.04s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.47s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2067.78s
-Loading error handling took 0.04s
-Loading script took 0.26s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Interface start took 0.65s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1600, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2078.67s
-Loading error handling took 0.03s
-Loading script took 0.27s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to '/home/etilia/.renpy/backups/driftingInSpace':
 Dump and make backups took 0.10s
@@ -1177,11 +476,11 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.51s
+Interface start took 0.50s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)
@@ -1191,5 +490,48 @@ Vendor: "b'Intel'"
 Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
 Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 533.26s
+Loading error handling took 0.03s
+Loading script took 0.16s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Dump and make backups took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.58s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1600, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) HD Graphics 520 (SKL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 25.3.5-arch1.1'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1600, 864) drawable=(1600, 864)
 Maximum texture size: 4096x4096
