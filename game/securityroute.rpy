@@ -173,6 +173,17 @@ label convincethem:
                                 char3 "Alright, then lets go!"
                                 jump waytoengineroom
                             "No, thats their job, not ours." if notdemo == 1:
+                                char3 "Youre right. Im sorry, but I dont think were qualified at all!"
+                                char3 "What if we mess something up?"
+                                char3 "Wouldnt there be issues with insurance too? I dont want to get sued or something!"
+                                char2 "Alright, yes that makes sense."
+                                char2 "Then just try not to let anyone in here until the next guard is here."
+                                "With that, she leaves her post."
+                                "You stay there for a while longer. After a bit another security guard arrives."
+                                "You dont really see what else you can do here, and walk back to the main hall."
+                                char3 "We still havent found out what the quarantine was about..."
+                                y "I think the bridge staff is a little uh... busy right now, so do we know about anyone else we could ask?"
+                                
                                 jump end
                     "Go get the captain":
                         char3 "Where do we need to go?"
