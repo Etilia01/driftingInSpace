@@ -81,7 +81,14 @@ label start:
     $ pronoun1 = "them"
     $ pronoun1 = "their"
     $ name = "'You'"
-    
+    "Which version of the story would you like to play?"
+    menu:
+        "Passenger":
+            jump passenger
+        "Staff" if notdemo == 1:
+            jump end
+label passenger:
+
     # starts a new scene, meaning it hides all sprites and backgrounds and loads hallway
     scene bg hallway
     "A loud alarm rings all throughout the ship"
