@@ -87,14 +87,26 @@ label start:
             jump passenger
         "Staff" if notdemo == 1:
             jump end
-label passenger:
-
-    # starts a new scene, meaning it hides all sprites and backgrounds and loads hallway
+label staff:
     scene bg hallway
     "A loud alarm rings all throughout the ship"
     "But its hard to pin down where exactly it came from"
     "You start looking around, trying to find out what broke this time"
-    "Eventually you give up, going back to the main hall."
+    jump end
+label passenger:
+
+    # starts a new scene, meaning it hides all sprites and backgrounds and loads hallway
+    "A loud alarm rings all throughout the ship"
+    y "What could that mean? More turbulences?"
+    "You wait for the announcement that should inevitably follow after."
+    "..."
+    "Nothing."
+    y "Huh. Thats weird."
+    "You decide to go to the main hall, since thats likely the place where youll find an explanation."
+    "Some other passengers apparently had the same idea. Yet theres no staff to be found."
+    "Slowly the other people in the hall leave again, murmuring about this strange situation."
+    "But its not much different than what youre already used from this ship. The public transit system really needs an overhaul, there have been constant malfunctions and delays through your travels with this line."
+    "Suddenly the huge screen in the back of the hall lights up"
     #animation of giant screen thingy with kit on it
     play voice "audio/voice/kit/kitmorning.ogg"
     kit "Morning."
