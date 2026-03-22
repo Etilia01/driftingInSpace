@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 245: 'padding' is not a keyword argument or valid child of the screen statement.
-    padding (20, 10, 20, 10) 
-           ^
+File "game/script.rpy", line 51: invalid syntax
+            python:
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Mar 15 21:58:08 2026
+Sun Mar 22 12:59:48 2026

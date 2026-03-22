@@ -40,12 +40,26 @@ image bubbly sad:
     zoom 1.8
 image bubbly shocked:
     "Bubbly/bubbly shocked.png"
+#voices
+define tritici_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+init python: 
+    def beepy_voice(event, interact=True, **kwargs):
+
+        if not interact: 
+            return 
+        if event == "show_done": 
+            
+            for _ in range(30):
+                renpy.sound.queue(renpy.random.choice(tritici_voice))
+        elif event == "slow_done":
+            renpy.sound.stop() 
+
 
 #characters
 define char1 = Character("PlaceholderBubblyGirl")
 define char2unknown = Character("Security Guard")
 define char2 = Character("Wren")
-define char3 = Character("Tritici")
+define char3 = Character("Tritici",callback=beepy_voice)
 define kit = Character ("Weirdo on a Screen")
 define captain= Character ("Captain")
 define unknown = Character("???")
@@ -81,6 +95,8 @@ label start:
     $ pronoun1 = "them"
     $ pronoun1 = "their"
     $ name = "'You'"
+    
+    stop music
     "Which version of the story would you like to play?"
     menu:
         "Passenger":
