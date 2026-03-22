@@ -97,6 +97,7 @@ label start:
     $ name = "'You'"
     
     stop music
+    play music 'audio/music/mainsongrobot.wav'
     "Which version of the story would you like to play?"
     menu:
         "Passenger":
