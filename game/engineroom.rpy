@@ -205,8 +205,8 @@ label engineroomearly:
                     char3 "Im a bit concerned about her waking up..."
                     tech "That was the plan."
                     "She smiles warmly."
-                    tech "But we cant leave her alone while we wait for them to arrive."
-                    tech "Goodbye."
+                    tech "But we cant leave her alone while we wait for them to arrive, so it would be nice of you to keep an eye on her until then."
+                    tech "See you later."
                     "She picks up the captain by his arms, and Parker comes over to lift his legs. Together they haul him out the door."
                     "You wait, occasionally glancing nervously at Mustermann, but she doesnt seem to be waking up anytime soon."
                     "After a while the security guard you met at the bridge enters the room with a small team, introducing herself as Wren, and telling you to go walk to the medical station to get a checkup, sice you werent needed here anymore."
@@ -225,7 +225,7 @@ label engineroomearly:
                     "BAD ENDING 1: Not an action movie hero"
                     jump end
                 "Seek cover" if notdemo == 1:
-                    jump end
+                    jump cover
                 "Try to signal that youre harmless and are going to surrender & cooperate" if notdemo == 1:
                     jump end
 
@@ -237,5 +237,20 @@ label engineroomearly:
             "BAD ENDING 1: Not an action movie hero"
             jump end
         "Try to move out of the room and seek cover" if notdemo == 1:
+            jump cover
+
+label cover:
+    "You slowly walk backwards and turn around the corner, seeking cover behind the doorframe."
+    muster "What do you think youre doing!?"
+    y "Not getting shot?"
+    muster "Ah..."
+    muster "Well-"
+    muster "Well come back here!"
+    muster "I need to see what youre doing!"
+    menu:
+        "Try to call help":
             jump end
-    jump end
+        "Leave to get help":
+            jump end
+        "Look for a weapon":
+            jump end
