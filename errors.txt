@@ -2,8 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 51: invalid syntax
-            python:
+File "game/script.rpy", line 130: expected statement.
+    renpy.pause(0.5)
+                    ^
+
+File "game/script.rpy", line 138: expected statement.
+    renpy.pause(0.2)
+                    ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Mar 22 12:59:48 2026
+Fri Mar 27 18:43:11 2026

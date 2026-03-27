@@ -40,6 +40,23 @@ image bubbly sad:
     zoom 1.8
 image bubbly shocked:
     "Bubbly/bubbly shocked.png"
+    zoom 1.8
+#this adjusts background sizes
+image bg glitchscreen:
+    "bg glitchscreen.png"
+    zoom 0.5
+image bg bluescreen:
+    "bg bluescreen.png"
+    zoom 0.5
+image bg kit1:
+    "bg kit1.png"
+    zoom 0.5
+image bg kit2:
+    "bg kit2.png"
+    zoom 0.5
+image bg kit3:
+    "bg kit3.png"
+    zoom 0.5
 #voices
 define tritici_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
 init python: 
@@ -97,7 +114,7 @@ label start:
     $ name = "'You'"
     
     stop music
-    play music 'audio/music/mainsongrobot.wav'
+    play music 'audio/music/mainsongecho.wav'
     "Which version of the story would you like to play?"
     menu:
         "Passenger":
@@ -123,14 +140,22 @@ label passenger:
     "Some other passengers apparently had the same idea. Yet theres no staff to be found."
     "Slowly the other people in the hall leave again, murmuring about this strange situation."
     "But its not much different than what youre already used from this ship. The public transit system really needs an overhaul, there have been constant malfunctions and delays through your travels with this line."
+    scene bg glitchscreen
     "Suddenly the huge screen in the back of the hall lights up"
     #animation of giant screen thingy with kit on it
-    play voice "audio/voice/kit/kitmorning.ogg"
+    scene bg kit1
+    $ renpy.pause(0.5)
+    scene bg kit2
+    $ renpy.pause(0.5)
     kit "Morning."
-    play voice "audio/voice/kit/kitquarantined.ogg"
+    scene bg kit3
     kit "So youre quarantined now."
-    play voice "audio/voice/kit/goodluck.ogg"
+    
     kit "Good luck fellas"
+    scene bg glitchscreen
+    $ renpy.pause(0.2)
+    scene bg bluescreen
+    pause
     #screen shuts off with glitch effects
     y "huh."
     show tritici shocked
