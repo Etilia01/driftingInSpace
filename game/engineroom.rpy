@@ -89,7 +89,7 @@ label engineroomafterwaiting:
             "After a few hours the ship starts moving again, and everything goes as planned from there on."
             "At dinner you hear something about the criminal who had sabotaged the engine escaping, but you dont pay much mind to it, and forget about it soon after."
             "You leave the ship at your planned stop a few days later, and never think back to this incident."
-            "ENDING 4: The best choice (for yourself)"
+            "NEUTRAL ENDING 2: The best choice (for yourself)"
             jump end
 
 label afterpowergen:
@@ -154,7 +154,7 @@ label cables:
     captain "Now Amelia will try to fix the boardcomputer so that we can ask ground to send help. You two can go back to whatever you were doing before. Thank you for trying to help though."
     "Tritici and you go back to the sections of the ship accessible to passengers."
     "The rest of your travels go relatively uneventful, and you arrive safely at your destination."
-    "ENDING 1: What great help you were."
+    "NEUTRAL ENDING 3: What great help you were."
     "Epilogue coming soon!"
     jump end
     
@@ -205,8 +205,8 @@ label engineroomearly:
                     char3 "Im a bit concerned about her waking up..."
                     tech "That was the plan."
                     "She smiles warmly."
-                    tech "But we cant leave her alone while we wait for them to arrive."
-                    tech "Goodbye."
+                    tech "But we cant leave her alone while we wait for them to arrive, so it would be nice of you to keep an eye on her until then."
+                    tech "See you later."
                     "She picks up the captain by his arms, and Parker comes over to lift his legs. Together they haul him out the door."
                     "You wait, occasionally glancing nervously at Mustermann, but she doesnt seem to be waking up anytime soon."
                     "After a while the security guard you met at the bridge enters the room with a small team, introducing herself as Wren, and telling you to go walk to the medical station to get a checkup, sice you werent needed here anymore."
@@ -215,17 +215,17 @@ label engineroomearly:
                     "They had suspected she was on the ship, hoping a quarantine would prompt her to drop her disguise, but didnt expect to lose contact to the ship and their internal agent before they could inform the crew of this plan."
                     "Both Tritici and you were interviewed as witnesses and awarded a small monetary prize for the role you played in capturing her."
                     "They left again, and you dont expect to hear any more of this case."
-                    "ENDING 3: SUCESSFUL ARREST"
+                    "GOOD ENDING 1: SUCESSFUL ARREST"
                     "Epilogue coming soon."
                     jump end
                 "Try to disarm the person threatening you":
                     "You move closer and reach for their gun."
                     "They move back a little, panicking and pulling the trigger."
                     "The people around you watch in shock as you fall over on your back, and the light leaves your eyes."
-                    "ENDING 2: Not an action movie hero"
+                    "BAD ENDING 1: Not an action movie hero"
                     jump end
                 "Seek cover" if notdemo == 1:
-                    jump end
+                    jump cover
                 "Try to signal that youre harmless and are going to surrender & cooperate" if notdemo == 1:
                     jump end
 
@@ -234,8 +234,23 @@ label engineroomearly:
             "You move closer and reach for their gun."
             "They move back a little, panicking and pulling the trigger."
             "The people around you watch in shock as you fall over on your back, and the light leaves your eyes."
-            "ENDING 2: Not an action movie hero"
+            "BAD ENDING 1: Not an action movie hero"
             jump end
         "Try to move out of the room and seek cover" if notdemo == 1:
+            jump cover
+
+label cover:
+    "You slowly walk backwards and turn around the corner, seeking cover behind the doorframe."
+    muster "What do you think youre doing!?"
+    y "Not getting shot?"
+    muster "Ah..."
+    muster "Well-"
+    muster "Well come back here!"
+    muster "I need to see what youre doing!"
+    menu:
+        "Try to call help":
             jump end
-    jump end
+        "Leave to get help":
+            jump end
+        "Look for a weapon":
+            jump end

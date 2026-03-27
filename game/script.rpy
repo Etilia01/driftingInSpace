@@ -1,4 +1,4 @@
-﻿# this adjusts sprite sizes
+﻿# this adjusts sprite sizes because i drew them horribly small :,)
 #tritici
 image tritici idle 1:
     "Tritici/tritici idle 1.png"
@@ -59,8 +59,14 @@ image bg kit3:
     zoom 0.5
 #voices
 define tritici_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+define wren_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+define captain_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+define kit_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+define muster_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+define amelia_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+#there has to be a better/more efficient way to handle this (ᵕ—ᴗ—)
 init python: 
-    def beepy_voice(event, interact=True, **kwargs):
+    def tritici_voice(event, interact=True, **kwargs):
 
         if not interact: 
             return 
@@ -69,19 +75,70 @@ init python:
             for _ in range(30):
                 renpy.sound.queue(renpy.random.choice(tritici_voice))
         elif event == "slow_done":
+            renpy.sound.stop()
+    def wren_voice(event, interact=True, **kwargs):
+
+        if not interact: 
+            return 
+        if event == "show_done": 
+            
+            for _ in range(30):
+                renpy.sound.queue(renpy.random.choice(wren_voice))
+        elif event == "slow_done":
+            renpy.sound.stop()
+    def kit_voice(event, interact=True, **kwargs):
+
+        if not interact: 
+            return 
+        if event == "show_done": 
+            
+            for _ in range(30):
+                renpy.sound.queue(renpy.random.choice(kit_voice))
+        elif event == "slow_done":
+            renpy.sound.stop()
+    def captain_voice(event, interact=True, **kwargs):
+
+        if not interact: 
+            return 
+        if event == "show_done": 
+            
+            for _ in range(30):
+                renpy.sound.queue(renpy.random.choice(captain_voice))
+        elif event == "slow_done":
             renpy.sound.stop() 
+    def muster_voice(event, interact=True, **kwargs):
+
+        if not interact: 
+            return 
+        if event == "show_done": 
+            
+            for _ in range(30):
+                renpy.sound.queue(renpy.random.choice(muster_voice))
+        elif event == "slow_done":
+            renpy.sound.stop() 
+    def amelia_voice(event, interact=True, **kwargs):
+
+        if not interact: 
+            return 
+        if event == "show_done": 
+            
+            for _ in range(30):
+                renpy.sound.queue(renpy.random.choice(amelia_voice))
+        elif event == "slow_done":
+            renpy.sound.stop()  
+
 
 
 #characters
 define char1 = Character("PlaceholderBubblyGirl")
-define char2unknown = Character("Security Guard")
-define char2 = Character("Wren")
-define char3 = Character("Tritici",callback=beepy_voice)
-define kit = Character ("Weirdo on a Screen")
-define captain= Character ("Captain")
-define unknown = Character("???")
-define muster = Character ("Mustermann")
-define tech = Character ("Amelia")
+define char2unknown = Character("Security Guard",callback=wren_voice)
+define char2 = Character("Wren",callback=wren_voice)
+define char3 = Character("Tritici",callback=tritici_voice)
+define kit = Character ("Weirdo on a Screen", callback=kit_voice)
+define captain= Character ("Captain",callback=captain_voice)
+define unknown = Character("???",callback=muster_voice)
+define muster = Character ("Mustermann",callback=muster_voice)
+define tech = Character ("Amelia",callback=amelia_voice)
 #define e= Character("Erzähler")
 define y= Character("[name]")
 
