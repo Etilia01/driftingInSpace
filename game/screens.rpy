@@ -206,10 +206,16 @@ style input:
 
 screen choice(items):
     style_prefix "choice"
-
-    vbox:
-        for i in items:
-            textbutton i.caption action i.action
+    if lowered:
+        
+        vbox:
+            ypos 540
+            for i in items:
+                textbutton i.caption action i.action
+    else:
+        vbox:
+            for i in items:
+                textbutton i.caption action i.action
 
 
 style choice_vbox is vbox

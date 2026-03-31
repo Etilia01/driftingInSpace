@@ -1,4 +1,5 @@
 label engineroomafterwaiting:
+    play music 'audio/music/engineroom.wav' fadeout 2.0 fadein 2.0 volume 1.5
     "You enter the engine room."
     y "What-!?"
     "In front of you, on the ground, lies a man in an important looking uniform."

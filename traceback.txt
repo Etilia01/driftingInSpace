@@ -1,27 +1,17 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script
-    "But its hard to pin down where exactly it came from"
-  File "game/screens.rpy", line 238, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 238, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 243, in execute
-    if quick_menu:
-  File "game/screens.rpy", line 245, in execute
-    hbox:
-  File "game/screens.rpy", line 250, in execute
-    if hasflyer == 1:
-  File "game/screens.rpy", line 250, in <module>
-    if hasflyer == 1:
-NameError: name 'hasflyer' is not defined
+  File "game/script.rpy", line 219, in script
+    kit "Morning."
+  File "game/script.rpy", line 99, in kit_voice
+    renpy.sound.queue(renpy.random.choice(kit_voice))
+TypeError: object of type 'function' has no len()
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 30, in script
-    "But its hard to pin down where exactly it came from"
+  File "game/script.rpy", line 219, in script
+    kit "Morning."
   File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 2586, in execute
     Say.execute(self)
   File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 623, in execute
@@ -32,43 +22,16 @@ Full traceback:
     self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
   File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1117, in do_display
     display_say(who,
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 814, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2218, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2748, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 480, in visit_all
-    callback(self)
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/core.py", line 2748, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 491, in per_interact
-    self.update()
-  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/display/screen.py", line 700, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 238, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 238, in execute
-    screen quick_menu():
-  File "game/screens.rpy", line 243, in execute
-    if quick_menu:
-  File "game/screens.rpy", line 245, in execute
-    hbox:
-  File "game/screens.rpy", line 250, in execute
-    if hasflyer == 1:
-  File "game/screens.rpy", line 250, in <module>
-    if hasflyer == 1:
-NameError: name 'hasflyer' is not defined
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 808, in display_say
+    pause_callback("show_done")
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 91, in __call__
+    c(*args, **kwargs)
+  File "game/script.rpy", line 99, in kit_voice
+    renpy.sound.queue(renpy.random.choice(kit_voice))
+  File "lib/python3.9/random.py", line 346, in choice
+TypeError: object of type 'function' has no len()
 
 Linux-6.18.9-arch1-2-x86_64-with-glibc2.43 x86_64
 Ren'Py 8.3.7.25031702
 driftingInSpace Beta
-Thu Mar  5 20:56:46 2026
+Sat Mar 28 13:36:21 2026

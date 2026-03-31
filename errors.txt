@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 130: expected statement.
-    renpy.pause(0.5)
-                    ^
-
-File "game/script.rpy", line 138: expected statement.
-    renpy.pause(0.2)
-                    ^
+File "game/screens.rpy", line 213: for expects a non-empty block.
+    for i in items:
+                   ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri Mar 27 18:43:11 2026
+Sat Mar 28 13:30:48 2026

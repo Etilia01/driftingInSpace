@@ -1,4 +1,7 @@
-﻿# this adjusts sprite sizes because i drew them horribly small :,)
+﻿#effects and stuff idfk
+define slowdissolve = Dissolve(1.0)
+default lowered = False
+# this adjusts sprite sizes because i drew them horribly small :,)
 #tritici
 image tritici idle 1:
     "Tritici/tritici idle 1.png"
@@ -59,14 +62,14 @@ image bg kit3:
     zoom 0.5
 #voices
 define tritici_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
-define wren_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+define wren_voice= ['audio/voice/wren1.wav', 'audio/voice/wren2.wav', 'audio/voice/wren3.wav', 'audio/voice/wren4.wav']
 define captain_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
-define kit_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
+define kit_voice= ['audio/voice/kitvoice1.wav', 'audio/voice/kitvoice2.wav', 'audio/voice/kitvoice3.wav', 'audio/voice/kitvoice4.wav']
 define muster_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
 define amelia_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
 #there has to be a better/more efficient way to handle this (ᵕ—ᴗ—)
 init python: 
-    def tritici_voice(event, interact=True, **kwargs):
+    def tritici_voicefunc(event, interact=True, **kwargs):
 
         if not interact: 
             return 
@@ -76,7 +79,7 @@ init python:
                 renpy.sound.queue(renpy.random.choice(tritici_voice))
         elif event == "slow_done":
             renpy.sound.stop()
-    def wren_voice(event, interact=True, **kwargs):
+    def wren_voicefunc(event, interact=True, **kwargs):
 
         if not interact: 
             return 
@@ -86,7 +89,7 @@ init python:
                 renpy.sound.queue(renpy.random.choice(wren_voice))
         elif event == "slow_done":
             renpy.sound.stop()
-    def kit_voice(event, interact=True, **kwargs):
+    def kit_voicefunc(event, interact=True, **kwargs):
 
         if not interact: 
             return 
@@ -96,7 +99,7 @@ init python:
                 renpy.sound.queue(renpy.random.choice(kit_voice))
         elif event == "slow_done":
             renpy.sound.stop()
-    def captain_voice(event, interact=True, **kwargs):
+    def captain_voicefunc(event, interact=True, **kwargs):
 
         if not interact: 
             return 
@@ -106,7 +109,7 @@ init python:
                 renpy.sound.queue(renpy.random.choice(captain_voice))
         elif event == "slow_done":
             renpy.sound.stop() 
-    def muster_voice(event, interact=True, **kwargs):
+    def muster_voicefunc(event, interact=True, **kwargs):
 
         if not interact: 
             return 
@@ -116,7 +119,7 @@ init python:
                 renpy.sound.queue(renpy.random.choice(muster_voice))
         elif event == "slow_done":
             renpy.sound.stop() 
-    def amelia_voice(event, interact=True, **kwargs):
+    def amelia_voicefunc(event, interact=True, **kwargs):
 
         if not interact: 
             return 
@@ -131,14 +134,14 @@ init python:
 
 #characters
 define char1 = Character("PlaceholderBubblyGirl")
-define char2unknown = Character("Security Guard",callback=wren_voice)
-define char2 = Character("Wren",callback=wren_voice)
-define char3 = Character("Tritici",callback=tritici_voice)
-define kit = Character ("Weirdo on a Screen", callback=kit_voice)
-define captain= Character ("Captain",callback=captain_voice)
-define unknown = Character("???",callback=muster_voice)
-define muster = Character ("Mustermann",callback=muster_voice)
-define tech = Character ("Amelia",callback=amelia_voice)
+define char2unknown = Character("Security Guard",callback=wren_voicefunc)
+define char2 = Character("Wren",callback=wren_voicefunc)
+define char3 = Character("Tritici",callback=tritici_voicefunc)
+define kit = Character ("Weirdo on a Screen", callback=kit_voicefunc)
+define captain= Character ("Captain",callback=captain_voicefunc)
+define unknown = Character("???",callback=muster_voicefunc)
+define muster = Character ("Mustermann",callback=muster_voicefunc)
+define tech = Character ("Amelia",callback=amelia_voicefunc)
 #define e= Character("Erzähler")
 define y= Character("[name]")
 
@@ -171,15 +174,24 @@ label start:
     $ name = "'You'"
     
     stop music
-    play music 'audio/music/mainsongecho.wav'
-    "Which version of the story would you like to play?"
+    play music 'audio/music/mainthememoreeditedidk.wav'
+    $ lowered = True
+    show text  _("{size=50}Which version of the story would you like to play?"): 
+        xalign 0.5 
+        yalign 0.3 
+    with slowdissolve
     menu:
         "Passenger":
+            hide text
+            $ lowered = False
             jump passenger
         "Staff" if notdemo == 1:
+            $ lowered = False
+            hide text
             jump end
+    
 label staff:
-    scene bg hallway
+    scene bg hallway1
     "A loud alarm rings all throughout the ship"
     "But its hard to pin down where exactly it came from"
     "You start looking around, trying to find out what broke this time"
@@ -194,15 +206,22 @@ label passenger:
     "Nothing."
     y "Huh. Thats weird."
     "You decide to go to the main hall, since thats likely the place where youll find an explanation."
+    scene bg hallway1
+    "So you leave your room and walk over there."
+    "Its not that far from the passenger cabins, so even though you almost get lost navigating the grey, repetitive hallways, it doesnt take you long to get there."
+    "As you arrive in the main hall, the alarm has already stopped again."
     "Some other passengers apparently had the same idea. Yet theres no staff to be found."
     "Slowly the other people in the hall leave again, murmuring about this strange situation."
-    "But its not much different than what youre already used from this ship. The public transit system really needs an overhaul, there have been constant malfunctions and delays through your travels with this line."
+    "But its not much different than what youre already used from this ship."
+    "The public transit system really needs an overhaul, there have been constant malfunctions and delays throughout all of your travels with this line."
     scene bg glitchscreen
     "Suddenly the huge screen in the back of the hall lights up"
     #animation of giant screen thingy with kit on it
     scene bg kit1
+    
     $ renpy.pause(0.5)
     scene bg kit2
+    with slowdissolve
     $ renpy.pause(0.5)
     kit "Morning."
     scene bg kit3
