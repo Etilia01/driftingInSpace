@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 213: for expects a non-empty block.
+    for i in items:
+                   ^
+
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Sat Mar 28 13:30:48 2026

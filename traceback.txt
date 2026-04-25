@@ -1,0 +1,37 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 219, in script
+    kit "Morning."
+  File "game/script.rpy", line 99, in kit_voice
+    renpy.sound.queue(renpy.random.choice(kit_voice))
+TypeError: object of type 'function' has no len()
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 219, in script
+    kit "Morning."
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 2586, in execute
+    Say.execute(self)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/exports/sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1471, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 1117, in do_display
+    display_say(who,
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 808, in display_say
+    pause_callback("show_done")
+  File "/home/etilia/Desktop/Game Development/Ren´py/renpy-8.3.3-sdk/renpy/character.py", line 91, in __call__
+    c(*args, **kwargs)
+  File "game/script.rpy", line 99, in kit_voice
+    renpy.sound.queue(renpy.random.choice(kit_voice))
+  File "lib/python3.9/random.py", line 346, in choice
+TypeError: object of type 'function' has no len()
+
+Linux-6.18.9-arch1-2-x86_64-with-glibc2.43 x86_64
+Ren'Py 8.3.7.25031702
+driftingInSpace Beta
+Sat Mar 28 13:36:21 2026
