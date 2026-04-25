@@ -155,6 +155,8 @@ label cables:
     captain "Now Amelia will try to fix the boardcomputer so that we can ask ground to send help. You two can go back to whatever you were doing before. Thank you for trying to help though."
     "Tritici and you go back to the sections of the ship accessible to passengers."
     "The rest of your travels go relatively uneventful, and you arrive safely at your destination."
+    "You both get a free one month travel coupon for finding & helping the captain, but not much more than that."
+    "You soon forget everything that happened again."
     "NEUTRAL ENDING 3: What great help you were."
     "Epilogue coming soon!"
     jump end
