@@ -262,6 +262,7 @@ label passenger:
     pause
     #screen shuts off with glitch effects
     y "huh."
+    scene bg mainhall 1
     show tritici shocked
     char3 "WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHA-"
     "You only now notice the guy standing in the corner of the hall."
