@@ -116,9 +116,9 @@ label talkbridge:
 
 
 label bridgeoutside:
-    scene bg bridge
+    scene bg wrenencounter with dissolve
     "Or rather outside the bridge. Your way is being blocked by a very serious looking security person."
-    scene bg bridge 2
+    scene bg door2
     show tritici idle 1 at left
     show wren neutral at right
     char2 "Stop right there."

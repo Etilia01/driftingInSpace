@@ -87,6 +87,18 @@ image bg kit3:
 image bg mainhall 1:
     "bg mainhall 1.png"
     zoom 0.5
+image bg door1:
+    "bg door1.png"
+    zoom 0.5
+image bg door2:
+    "bg door2.png"
+    zoom 0.5
+image bg doortobridge:
+    "bg doortobridge.png"
+    zoom 0.5
+image bg wrenencounter:
+    "bg wrenencounter.png"
+    zoom 0.5
 #voices
 define tritici_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
 define wren_voice= ['audio/voice/wren1.wav', 'audio/voice/wren2.wav', 'audio/voice/wren3.wav', 'audio/voice/wren4.wav']
@@ -236,6 +248,8 @@ label passenger:
     scene bg hallway1
     "So you leave your room and walk over there."
     "Its not that far from the passenger cabins, so even though you almost get lost navigating the grey, repetitive hallways, it doesnt take you long to get there."
+    scene bg door2
+    $ renpy.pause(0.5)
     scene bg mainhall 1 with dissolve
     "As you arrive in the main hall, the alarm has already stopped again."
     "Some other passengers apparently had the same idea. Yet theres no staff to be found."
