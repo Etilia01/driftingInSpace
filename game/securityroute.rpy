@@ -242,6 +242,7 @@ label convincethem:
                 jump convincethem
     
 label waytoengineroom:
+    scene bg hallway1
     "You make your way to the engine room."
     y "How do you know where we need to go?"
     char3 "Im always really anxious about getting lost, because I'd be way to scared to ask for help, so I have the layout memorized."
@@ -252,9 +253,9 @@ label waytoengineroom:
             char3 "Ok, here you go!"
             if mean <=1:
                 y "Thank you!"
-            $ hasflyer = 1
+            #$ hasflyer = 1
             "You put the flyer in your pocket."
-            $ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left. This can be helpful in the epilogue, depending on which you unlocked.")
+            #$ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left. This can be helpful in the epilogue, depending on which you unlocked.")
             char3 "Alright, lets continue to the engine room!"
                 
             jump continuetoroom
@@ -263,6 +264,7 @@ label waytoengineroom:
             y "I will, thanks."
             jump continuetoroom
 label waytoengineroom2:
+    scene bg hallway1
     "You make your way to the engine room."
     y "How do you know where we need to go?"
     char3 "Im always really anxious about getting lost, because I'd be way to scared to ask for help, so I have the layout memorized."
@@ -273,9 +275,9 @@ label waytoengineroom2:
             char3 "Ok, here you go!"
             if mean <=1:
                 y "Thank you!"
-            $ hasflyer = 1
+            #$ hasflyer = 1
             "You put the flyer in your pocket."
-            $ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left.\nThis can be helpful in the epilogue, depending on which you unlocked.")
+            #$ renpy.notify("From now on, you can open the flyer using the button on the lower middle-left.\nThis can be helpful in the epilogue, depending on which you unlocked.")
             char3 "Alright, lets continue to the engine room!"
                 
             jump engineroomearly
@@ -284,6 +286,7 @@ label waytoengineroom2:
             y "I will, thanks."
             jump engineroomearly
 label continuetoroom:
+    scene bg dooropen
     "You finally arrive at the engine room, and immediately notice that something is wrong."
     "The door is wide open, but you cant hear anything from the inside."
     "Even if the engine was silent somehow, you should at least hear the three people who should be inside the room, shouldnt you?"

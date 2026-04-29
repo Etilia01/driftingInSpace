@@ -51,6 +51,26 @@ image wren unsure:
     "wren/wren unsure.png"
     zoom 1.8
 
+#captain
+image captain concerned:
+    "captain/captain concerned.png"
+    zoom 1.8
+image captain happy:
+    "captain/captain happy.png"
+    zoom 1.8
+image captain neutral1:
+    "captain/captain neutral1.png"
+    zoom 1.8
+image captain neutral2:
+    "captain/captain neutral2.png"
+    zoom 1.8
+image captain sad:
+    "captain/captain sad.png"
+    zoom 1.8
+image captain shocked:
+    "captain/captain shocked.png"
+    zoom 1.8
+
 # bubbly
 image bubbly happy:
     "Bubbly/bubbly happy.png"
@@ -97,6 +117,18 @@ image bg doortobridge:
     "bg doortobridge.png"
     zoom 0.5
 image bg wrenencounter:
+    "bg wrenencounter.png"
+    zoom 0.5
+image bg engineroom1:
+    "bg wrenencounter.png"
+    zoom 0.5
+image bg engineroom2:
+    "bg wrenencounter.png"
+    zoom 0.5
+image bg engineroom3:
+    "bg wrenencounter.png"
+    zoom 0.5
+image bg dooropen:
     "bg wrenencounter.png"
     zoom 0.5
 #voices
