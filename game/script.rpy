@@ -120,16 +120,16 @@ image bg wrenencounter:
     "bg wrenencounter.png"
     zoom 0.5
 image bg engineroom1:
-    "bg wrenencounter.png"
+    "bg engineroom1.png"
     zoom 0.5
 image bg engineroom2:
-    "bg wrenencounter.png"
+    "bg engineroom2.png"
     zoom 0.5
 image bg engineroom3:
-    "bg wrenencounter.png"
+    "bg engineroom3.png"
     zoom 0.5
 image bg dooropen:
-    "bg wrenencounter.png"
+    "bg dooropen.png"
     zoom 0.5
 #voices
 define tritici_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']

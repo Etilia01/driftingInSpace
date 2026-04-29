@@ -1,4 +1,5 @@
 label engineroomafterwaiting:
+    scene bg engineroom2
     play music 'audio/music/engineroom.wav' fadeout 2.0 fadein 2.0 volume 1.5
     "You enter the engine room."
     y "What-!?"
@@ -8,6 +9,7 @@ label engineroomafterwaiting:
     "As you look up at the rest of the room, you can see that there seems to be loose cables hanging out of a corner at the ceiling, and the engine controls in the middle of the room look strangely damaged."
     "It looks almost as if they exploded, pieces shattered all around the room."
     "Its also getting harder to breathe, altough there is barely any visible smoke."
+    show tritici shocked
     char3 "Why are you just standing there!?"
     "Tritici rushes towards the man lying on the floor, frantically trying to check his pulse."
     char3 "Shit how do I do this???"
@@ -16,21 +18,28 @@ label engineroomafterwaiting:
     "He seems to be breathing as well."
     y "He's alive, its ok."
     y "How about we try to get him out of this room, inhaling whatever gas is in the air here cant be good for either of us."
+    show tritici slight sad
     char3 "That- thats a good idea."
     "He looks like he's about to cry. Understandable. You yourself feel very uncomfortable with this situation."
+    scene bg hallway1
     "You manage to drag the mans body out of the engine room together. Well, you did most of the work in the end."
     if mean <=1:
         "But you cant really hold it against Tritici. He doesnt seem very physically strong anyway, and he's not in the best mental state right now."
     "You take a deep breath trying to focus and figure out what to do now."
+    show captain concerned at left
     captain "Wren...?"
     "The captain seems to be awake."
+    show tritici idle 2 at right
     char3 "Hi- Uh I mean good afternoon sir, I am Tritici. [name] and me found you passed out in the engine room, do you know maybe happen to know what happened?"
+    show captain shocked at left
     captain "Passed out...? OH NO!"
     "He jolts upright, grabbing Triticis arm."
     captain "Theres a saboteur on board, they attacked Amelia and Parker! You have to tell Wren, they need to know! Have her get the passengers to the escape pods, and I'll go after the saboteur!"
     "He tries to get up, but doubles over in pain almost immediately."
+    show tritici idle 1 at right
     char3 "This might be bad timing... But who are these people youre talking about...?"
     "It takes the captain a minute to be able to talk again."
+    show captain concerned at left
     captain "Ah... Youre passengers, right? Of course you cant know that..."
     captain "My apologies."
     captain "The people that I was looking for here, Amelia and Parker, are our technician and mechanic. Wren is our head of security, they should be guarding the bridge right now."
@@ -38,22 +47,29 @@ label engineroomafterwaiting:
     captain "So plan change - inform Wren of what happened, and let her decide how to handle it. But do warn them, the saboteur is armed with some sort of ranged weapon."
     menu:
         "We can go after the saboteur!":
+            show captain shocked at left
             captain "You would do that...?"
             captain "Under normal circumstances I wouldnt allow it, but we cant lose any more time."
+            show captain neutral1 at left
             captain "Sure, go after them. I suspect theyre trying to get to the power generator. Since they attacked the engine their goal must be to incapacitate the ship."
             "Tritici helps him get up, and the Captain starts walking towards the bridge."
             "He turns around once more."
             captain "What are you waiting for? Go!"
+            scene bg hallway
             "You start running towards the power generator room, or rather Tritici starts doing that, and you follow him, trusting him to know the right way."
             "The ship is relatively quiet, except for some of the lone passengers slowly coming out of their rooms again."
+            scene bg door2
             "You arrive at the generator room. The door is closed."
+            show tritici idle 1
             char3 "Its very calm here... Maybe they havent arrived yet?"
             y "Its probably been aboout an hour since what happened in the engine room, considering thats when the captain went there."
             y "They should already be here."
             char3 "Alright, then lets go in there!"
+            scene bg dooropen
             "You open the door and step inside."
             "The room is empty. Except for the generator and various controlpanels of course."
             "Theres nobody inside, and everything seems like its running well."
+            show tritici idle 2
             char3 "Thats weird."
             menu:
                 "Maybe the captain was wrong?":
