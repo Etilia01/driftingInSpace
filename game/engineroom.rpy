@@ -153,33 +153,44 @@ label cables:
     y "Oh."
     char3 "Oh indeed. Lets just go back to the bridge and see if theyve found a solution there."
     scene bg doortobridge with slowdissolve
+    $ renpy.pause(0.5)
+    scene bg bridge with dissolve
     "The both of you rush back to the bridge, where you find an exhausted captain sitting inside the room."
+    show captain neutral1
     captain "Ah, hello. It turns out Ive sent you to the wrong place."
     "He gestures to the now (kind of) working screen next to him."
+    show captain neutral2
     captain "Wren tried kicking it. Surprisingly, that worked."
     captain "All cameras but these two are sending a signal."
     "He points towards one of them."
     captain "The engine room,"
     "He points towards the other."
     captain "the escape pods."
+    scene bg bridge
+    show tritici idle 2 at right
+    show captain neutral2 at left
     char3 "That means?"
     captain "That means I have sent Wren and her colleagues there. We can do nothing but wait now."
     "You wait. After less than five minutes, one of the monitoring screens starts blinking red."
     "The captain sighs."
     "After about 40 minutes, an exhausted security guard enters the bridge."
     "Its Wren."
+    scene bg bridge
+    show captain neutral2 at left
+    show wren unsure at right
     char2 "Both Amelia and Parker are doing well- or as well as possible in this situation."
     captain "Thats good to hear. But I assume the saboteur got away?"
     char2 "They did, Im sorry."
     captain "Its fine. The most important thing is that everyone is safe now. Please go to the medical station and get yourself checked. While youre there, tell Amelia to come here once she's feeling good enough."
     char3 "So what now?"
     captain "Now Amelia will try to fix the boardcomputer so that we can ask ground to send help. You two can go back to whatever you were doing before. Thank you for trying to help though."
-    "Tritici and you go back to the sections of the ship accessible to passengers."
-    "The rest of your travels go relatively uneventful, and you arrive safely at your destination."
-    "You both get a free one month travel coupon for finding & helping the captain, but not much more than that."
-    "You soon forget everything that happened again."
-    "NEUTRAL ENDING 3: What great help you were."
-    "Epilogue coming soon!"
+    scene black with fade
+    centered "Tritici and you go back to the sections of the ship accessible to passengers."
+    centered "The rest of your travels go relatively uneventful, and you arrive safely at your destination."
+    centered "You both get a free one month travel coupon for finding & helping the captain, but not much more than that."
+    centered "You soon forget everything that happened again."
+    centered "NEUTRAL ENDING 3: What great help you were."
+    centered "Epilogue coming soon!"
     jump end
     
     
