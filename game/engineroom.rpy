@@ -1,3 +1,5 @@
+#all demo endings for engineroom after waiting done!
+#to-do: engineroom early
 label engineroomafterwaiting:
     scene bg engineroom2
     play music 'audio/music/engineroom.wav' fadeout 2.0 fadein 2.0 volume 1.5
@@ -102,13 +104,15 @@ label engineroomafterwaiting:
             y "Well, I will be going back to my cabin."
             char3 "Good for you I guess. But Im going to try my best to help the captain."
             char3 "...Even if my best isnt a lot."
-            "He walks over to the captain to help him. Thats the last you see of the two before you turn around and go to your cabin, where you spent the rest of the day, reading your favorite book."
+            "He walks over to the captain to help him."
+            scene black with fade
+            centered "Thats the last you see of the two before you turn around and go to your cabin, where you spent the rest of the day, reading your favorite book."
             if mean <=0:
-                "You feel a bit bad about not helping out, but quickly shake off that feeling. You probably werent even qualified to handle that kind of situation!"
-            "After a few hours the ship starts moving again, and everything goes as planned from there on."
-            "At dinner you hear something about the criminal who had sabotaged the engine escaping, but you dont pay much mind to it, and forget about it soon after."
-            "You leave the ship at your planned stop a few days later, and never think back to this incident."
-            "NEUTRAL ENDING 2: The best choice (for yourself)"
+                centered "You feel a bit bad about not helping out, but quickly shake off that feeling. You probably werent even qualified to handle that kind of situation!"
+            centered "After a few hours the ship starts moving again, and everything goes as planned from there on."
+            centered "At dinner you hear something about the criminal who had sabotaged the engine escaping, but you dont pay much mind to it, and forget about it soon after."
+            centered "You leave the ship at your planned stop a few days later, and never think back to this incident."
+            centered "NEUTRAL ENDING 2: The best choice (for yourself)"
             jump end
 
 label afterpowergen:
@@ -207,6 +211,7 @@ label engineroomearly:
     unknown "Dont come closer!"
     "And come face to face with the barrel of a gun."
     scene bg engineroom1 with dissolve
+    show unknown angry2
     "Taking a quick look around the room you notice a man in uniform lying on the ground, presumably the captain."
     "In the corner of the room you see two people in quite similar get-up, just lacking some decorations on their uniforms. Likely the technician and mechanic."
     "One of the two gestures in your direction, maybe trying to get you to talk to the person in the middle of the room threatening you?"
@@ -226,15 +231,22 @@ label engineroomearly:
                     muster "Bad time, wrong place. These guys behind me, I need their help starting the escape pods. Theyre locked for some reason."
                     "You nod."
                     y "The quarantine."
+                    show unknown angry2
                     muster "The what now?"
                     y "Thats what the alarm was for, were quarantined for some reason. Of course we cant leave then."
+                    show unknown neutral
                     muster "Ah... That was not what I assumed it was. Either way, I NEED to leave right now."
                     muster "So if you'd let me and these technology people through now..."
                     y "Alright, but tell me first, why do you need to leave?"
                     muster "How's that any of your business?"
                     y "Im just curious."
                     muster "I may not be that popular with authoritys. And when i heard the alarm I assumed that I was why it rang."
+                    show unknown angry2
                     muster "Satisfied with the answer or not, MOVE!"
+                    scene black
+                    #PIPE SOUNDEFFECT!!!!!!!!!!!!
+                    play sound "soundeffects/pipe.mp3"
+                    scene bg engineroom1 with fade
                     "And right as she says that, she's hit on the head with a steel pipe"
                     "And falls over, dropping the gun."
                     "Tritici reacts quickly, seizing the gun and pointing it at her just in case she gets up again, while the young woman that knocked her out ties her to whats left of the engine."
@@ -259,9 +271,12 @@ label engineroomearly:
                     jump end
                 "Try to disarm the person threatening you":
                     "You move closer and reach for their gun."
+                    show unknown shocked
                     "They move back a little, panicking and pulling the trigger."
+                    play sound "soundeffects/boom.wav"
                     "The people around you watch in shock as you fall over on your back, and the light leaves your eyes."
-                    "BAD ENDING 1: Not an action movie hero"
+                    scene black with fade
+                    centered "BAD ENDING 1: Not an action movie hero"
                     jump end
                 "Seek cover" if notdemo == 1:
                     jump cover
@@ -271,9 +286,12 @@ label engineroomearly:
             jump end
         "Try to get closer and disarm them":
             "You move closer and reach for their gun."
+            show unknown shocked
             "They move back a little, panicking and pulling the trigger."
+            play sound "soundeffects/boom.wav"
             "The people around you watch in shock as you fall over on your back, and the light leaves your eyes."
-            "BAD ENDING 1: Not an action movie hero"
+            scene black with fade
+            centered "BAD ENDING 1: Not an action movie hero"
             jump end
         "Try to move out of the room and seek cover" if notdemo == 1:
             jump cover
