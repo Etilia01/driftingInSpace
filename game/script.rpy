@@ -1,6 +1,21 @@
 ﻿#effects and stuff idfk
 define slowdissolve = Dissolve(1.0)
 default lowered = False
+transform jumpingmiddle:
+    xalign 0.5 yalign 1.0 
+    ease .06 yoffset 24
+    ease .06 yoffset -24
+    ease .05 yoffset 20
+    ease .05 yoffset -20
+    ease .04 yoffset 16
+    ease .04 yoffset -16
+    ease .03 yoffset 12
+    ease .03 yoffset -12
+    ease .02 yoffset 8
+    ease .02 yoffset -8
+    ease .01 yoffset 4
+    ease .01 yoffset -4
+    ease .01 yoffset 0 
 # this adjusts sprite sizes because i drew them horribly small :,)
 #tritici
 image tritici idle 1:
@@ -84,7 +99,19 @@ image bubbly sad:
 image bubbly shocked:
     "Bubbly/bubbly shocked.png"
     zoom 1.8
-
+# unknown
+image unknown neutral:
+    "unknown neutral.png"
+    zoom 1.8
+image unknown angry:
+    "unknown angry.png"
+    zoom 1.8
+image unknown angry2:
+    "unknown angry2.png"
+    zoom 1.8
+image unknown shocked:
+    "unknown shocked.png"
+    zoom 1.8
 #this adjusts background sizes
 image bg glitchscreen:
     "bg glitchscreen.png"
@@ -309,7 +336,7 @@ label passenger:
     #screen shuts off with glitch effects
     y "huh."
     scene bg mainhall 1
-    show tritici shocked
+    show tritici shocked at jumpingmiddle
     char3 "WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHAT WHA-"
     "You only now notice the guy standing in the corner of the hall."
     #camera pans to scientist guy

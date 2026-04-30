@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/securityroute.rpy", line 119: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/securityroute.rpy", line 130: expected statement.
-    =======
-          ^
-
-File "game/securityroute.rpy", line 135: expected statement.
-    >>>>>>> 9e3f0909218de8c0c62db544761ae1551bccadc0
-                                                    ^
+File "game/script.rpy", line 3: transform statement expects a non-empty block.
+    transform jump_:
+                    ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Apr 25 14:34:00 2026
+Thu Apr 30 17:01:10 2026

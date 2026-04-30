@@ -86,11 +86,13 @@ label engineroomafterwaiting:
         "We can go tell Wren!" if notdemo == 1:
             jump end
         "We dont even work here...":
+            show tritici idle 2 at right
             char3 "...What?"
             y "Come on, dont pretend you actually want to play the hero here."
             y "Theres no way this will end well."
             if mean >=2:
                 "This is so stupid. What do we care what happens to these people? We dont even know them. Honestly, for all I care they could suffocate in space."
+                show tritici idle 1 at right
                 char3 "Thats- I dont think you should say things like that..."
             y "Either way, Im not helping."
             captain "That is your choice."
@@ -111,7 +113,9 @@ label engineroomafterwaiting:
 
 label afterpowergen:
     y "Maybe there's a clue to what theyre trying to do in what happened in the engine room..."
+    scene bg engineroom3 with dissolve
     "You walk back there to look at the engine room again."
+    
     y "Hm... I know! Its..."
     menu:
         "...the engine":
@@ -148,6 +152,7 @@ label cables:
     char3 "Im an agriculture expert."
     y "Oh."
     char3 "Oh indeed. Lets just go back to the bridge and see if theyve found a solution there."
+    scene bg doortobridge with slowdissolve
     "The both of you rush back to the bridge, where you find an exhausted captain sitting inside the room."
     captain "Ah, hello. It turns out Ive sent you to the wrong place."
     "He gestures to the now (kind of) working screen next to him."
@@ -181,19 +186,23 @@ label cables:
 
 
 label engineroomearly:
+    scene bg door2
     "You arrive at the engine room."
     "Through the closed door you can hear a loud noise. It almost sounds like an explosion."
+    show tritici shocked at jumpingmiddle
     char3 "Whats going on here!?"
     "He rushes towards the door, and hits the button to open it."
     "You go after him."
     unknown "Dont come closer!"
     "And come face to face with the barrel of a gun."
+    scene bg engineroom1 with dissolve
     "Taking a quick look around the room you notice a man in uniform lying on the ground, presumably the captain."
     "In the corner of the room you see two people in quite similar get-up, just lacking some decorations on their uniforms. Likely the technician and mechanic."
     "One of the two gestures in your direction, maybe trying to get you to talk to the person in the middle of the room threatening you?"
     menu:
         "Try to talk to them":
             y "What are you trying to do here?"
+            show unknown neutral at jumpingmiddle
             unknown "I just want to leave. Just follow my instructions and you'll be fine."
             "The woman that gestured to you now slowly moves behind the (heavily damaged) engine and slowly works on removing a steel pipe thats attached to it."
             menu:
