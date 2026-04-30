@@ -161,6 +161,12 @@ image bg dooropen:
 image bg bridge:
     "bg bridge.png"
     zoom 0.5
+image bg ohshit:
+    "bg ohshit.png"
+    zoom 0.5
+image bg pipe:
+    "bg pipe.png"
+    zoom 0.5
 #voices
 define tritici_voice= ['audio/voice/sound.wav', 'audio/voice/sound2.wav', 'audio/voice/voice4.wav', 'audio/voice/sound3.wav']
 define wren_voice= ['audio/voice/wren1.wav', 'audio/voice/wren2.wav', 'audio/voice/wren3.wav', 'audio/voice/wren4.wav']
@@ -351,8 +357,8 @@ label choice_no1:
         "Go over to him and try to comfort him":
             $mean -= 1
             jump comforttheweirdguy
-        "Nah." if notdemo == 1:
-            jump end
+        "Nah.":
+            jump nah
 label comforttheweirdguy:
     show tritici sad
     "You approach the guy in the corner."

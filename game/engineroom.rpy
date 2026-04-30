@@ -1,5 +1,4 @@
-#all demo endings for engineroom after waiting done!
-#to-do: engineroom early
+#all demo endings for engineroom done, except for the pipe& gun drawings i still need to add those T-T 
 label engineroomafterwaiting:
     scene bg engineroom2
     play music 'audio/music/engineroom.wav' fadeout 2.0 fadein 2.0 volume 1.5
@@ -208,6 +207,7 @@ label engineroomearly:
     char3 "Whats going on here!?"
     "He rushes towards the door, and hits the button to open it."
     "You go after him."
+    scene bg ohshit
     unknown "Dont come closer!"
     "And come face to face with the barrel of a gun."
     scene bg engineroom1 with dissolve
@@ -220,7 +220,7 @@ label engineroomearly:
             y "What are you trying to do here?"
             show unknown neutral at jumpingmiddle
             unknown "I just want to leave. Just follow my instructions and you'll be fine."
-            "The woman that gestured to you now slowly moves behind the (heavily damaged) engine and slowly works on removing a steel pipe thats attached to it."
+            "The woman that gestured to you now slowly moves behind the (slightly damaged) engine and slowly works on removing a steel pipe thats attached to it."
             menu:
                 "Keep talking to distract them":
                     y "May I ask who you are?"
@@ -246,7 +246,7 @@ label engineroomearly:
                     scene black
                     #PIPE SOUNDEFFECT!!!!!!!!!!!!
                     play sound "soundeffects/pipe.mp3"
-                    scene bg engineroom1 with fade
+                    scene bg pipe with fade
                     "And right as she says that, she's hit on the head with a steel pipe"
                     "And falls over, dropping the gun."
                     "Tritici reacts quickly, seizing the gun and pointing it at her just in case she gets up again, while the young woman that knocked her out ties her to whats left of the engine."
@@ -259,15 +259,17 @@ label engineroomearly:
                     tech "But we cant leave her alone while we wait for them to arrive, so it would be nice of you to keep an eye on her until then."
                     tech "See you later."
                     "She picks up the captain by his arms, and Parker comes over to lift his legs. Together they haul him out the door."
+                    scene bg engineroom1
                     "You wait, occasionally glancing nervously at Mustermann, but she doesnt seem to be waking up anytime soon."
                     "After a while the security guard you met at the bridge enters the room with a small team, introducing herself as Wren, and telling you to go walk to the medical station to get a checkup, sice you werent needed here anymore."
-                    "You did just that. As expected, both of you were fine, altough Tritici was still a bit shaken, and you were sent back to your cabins."
-                    "It took less then a day for the interdimensional police to arrive and arrest the criminal. Apparently they had been looking for her for quite a while, since she had ties to various illegal weapon smuggling operations, and had been illegally working as a well known mercenary for years."
-                    "They had suspected she was on the ship, hoping a quarantine would prompt her to drop her disguise, but didnt expect to lose contact to the ship and their internal agent before they could inform the crew of this plan."
-                    "Both Tritici and you were interviewed as witnesses and awarded a small monetary prize for the role you played in capturing her."
-                    "They left again, and you dont expect to hear any more of this case."
-                    "GOOD ENDING 1: SUCESSFUL ARREST"
-                    "Epilogue coming soon."
+                    scene black with fade
+                    centered "You did just that. As expected, both of you were fine, altough Tritici was still a bit shaken, and you were sent back to your cabins."
+                    centered "It took less then a day for the interdimensional police to arrive and arrest the criminal. Apparently they had been looking for her for quite a while, since she had ties to various illegal weapon smuggling operations, and had been illegally working as a well known mercenary for years."
+                    centered "They had suspected she was on the ship, hoping a quarantine would prompt her to drop her disguise, but didnt expect to lose contact to the ship and their internal agent before they could inform the crew of this plan."
+                    centered "Both Tritici and you were interviewed as witnesses and awarded a small monetary prize for the role you played in capturing her."
+                    centered "They left again, and you dont expect to hear any more of this case."
+                    centered "GOOD ENDING 1: SUCESSFUL ARREST"
+                    centered "Epilogue coming soon."
                     jump end
                 "Try to disarm the person threatening you":
                     "You move closer and reach for their gun."

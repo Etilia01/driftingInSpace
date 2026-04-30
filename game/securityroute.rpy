@@ -1,4 +1,5 @@
 label bridge:
+    scene bg hallway1
     "You leave the main hall and walk somewhere in the general direction of the bridge."
     "the silence feels a bit akward"
     menu:
@@ -141,6 +142,7 @@ label bridgeoutside:
 
 label convincethem:
     if convincesecurityfail == 2:
+        show wren angry at right
         char2 "Look, I dont think were getting anywhere with this."
         char2 "I have to ask you to leave. If you dont do it on your own, I will have to use force."
         char3 "Were so so sorry, of course well leave!"
@@ -148,11 +150,14 @@ label convincethem:
         $ convincesecurityfail = 0
         jump convincethem
     else:
+        show wren neutral 2 at right
         menu:
             "Its an emergency, so it should be fine.":
                 char2 "Well. I guess it is..."
+                show wren unsure at right
                 char2 "Fine."
                 char2 "The board computer had a malfunction, so he went to get our main technician to fix it."
+                show wren neutral at right
                 char2 "He's been gone for quite some time now, so he should get back soon."
                 char3 "Alright, then we'll wait here with you."
                 menu:
@@ -201,6 +206,7 @@ label convincethem:
                 char2 "Then show me your ids please."
                 char3 "AAAH Im so sorry, [pronoun1] [ist] just joking!"
                 char3 "We're just guests!"
+                show wren sus at right
                 char2 "How funny. Well, then I certainly cant tell you."
                 $ convincesecurityfail +=1
                 jump convincethem
@@ -227,6 +233,7 @@ label convincethem:
                         y "So... That was a joke."
                         char2 "What?"
                         y "I dont actually work here."
+                        show wren sus at right
                         char2 "Ah. Very funny."
                         $ convincesecurityfail +=1
                         jump convincethem
