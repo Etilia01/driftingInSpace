@@ -194,7 +194,7 @@ label convincethem:
                                 "You dont really see what else you can do here, and walk back to the main hall."
                                 char3 "We still havent found out what the quarantine was about..."
                                 y "I think the bridge staff is a little uh... busy right now, so do we know about anyone else we could ask?"
-                                
+                                #something about the map here
                                 jump end
                     "Go get the captain":
                         char3 "Where do we need to go?"
