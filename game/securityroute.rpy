@@ -226,8 +226,11 @@ label convincethem:
                 if scientistlikes>=2:
                     "I dont want you to get in trouble!"
                 menu:
-                    #"It will be fine":
-                        #jump end
+                    "It will be fine":
+                        char3 "For sure?"
+                        y "Of course!"
+                        y "Im sure ill find an id somewhere.."
+                        jump end
                     "Youre right, what was I thinking?":
                         "You turn back and walk back to the door."
                         y "So... That was a joke."
